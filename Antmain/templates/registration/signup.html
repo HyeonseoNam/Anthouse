@@ -1,0 +1,112 @@
+
+{% extends "./photo/base.html" %}
+{% block content %}
+
+    <script type="text/javascript">
+$(document).ready(function(){
+    $('#signupModal').modal('show')
+});
+</script>
+
+  <!--signup modal-->
+  <div id="signupModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h1 class="text-center">회원가입</h1>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="{% url 'signup' %}" name="registerform" class="form col-md-12 center-block">
+              {% csrf_token %}
+            <div class="form-group">
+              <input id="login_input_username" class="form-control input-lg" type="text" pattern="[a-zA-Z0-9]{2,64}" name="username" required placeholder="아이디">
+            </div>
+            <div class="form-group">
+              <input id="login_input_email" class="form-control input-lg" type="email" name="email" required placeholder="이메일">
+            </div>
+            <div class="form-group">
+              <input id="login_input_password_new" class="form-control input-lg" type="password" name="password1" pattern=".{4,}" required autocomplete="off" placeholder="비밀번호(최소 4자)">
+            </div>
+            <div class="form-group">
+              <input id="login_input_password_repeat" class="form-control input-lg" type="password" name="password2" pattern=".{4,}" required autocomplete="off" placeholder="비밀번호 확인">
+            </div>
+            <div class="form-group">
+              <input type="submit" name="register" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 15px;" value="회원가입완료">
+              <span class="pull-right"><a href="#" style="color:#555">서비스이용약관</a></span>
+              <span><a href="#signup" style="color:#555">개인정보이용방침</a></span>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="col-md-12">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">창 닫기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <header>
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1>성공투자를 위한 스마트 투자관리</h1>
+{#        <p>쉽고 빠른 스타일 쇼핑! <br> 사용자 맞춤 패션 추천! <br> 간편한 인터페이스!</p>#}
+
+        <form method="GET" action="index.php" class="col-lg-12">
+          <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
+{#            <input class="form-control input-lg" title="fashion search" placeholder="어떤 패션을 검색하시겠어요?" type="text" name="search">#}
+{#            <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">검색</button></span>#}
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </header>
+{##}
+{#<form id="signup" class="form col-md-12 center-block" method="POST" action=" {% url 'signup' %}">#}
+{#    {% csrf_token %}#}
+{#    <!-- Username input-->#}
+{#            <div class="form-group">#}
+{##}
+{#            {{ signupform.username.label_tag }}#}
+{#            {{ signupform.username }}#}
+{#            <span class="field-error">#}
+{#                {{ signupform.username.errors|striptags }}#}
+{#            </span></div>#}
+{##}
+{#    <!-- Email input-->#}
+{#            <div class="form-group">#}
+{##}
+{#            {{ signupform.email.label_tag }}#}
+{#            {{ signupform.email }}#}
+{#            <span class="field-error">#}
+{#                {{ signupform.email.errors|striptags }}#}
+{#            </span></div>#}
+{##}
+{#    <!-- Password1 input-->#}
+{#            <div class="form-group">#}
+{#            {{ signupform.password1.label_tag }}#}
+{#            {{ signupform.password1 }}#}
+{#            <span class="field-error">#}
+{#                {{ signupform.password1.errors|striptags }}#}
+{#            </span></div>#}
+{##}
+{#    <!-- Password2 input-->#}
+{#            <div class="form-group">#}
+{#            {{ signupform.password2.label_tag }}#}
+{#            {{ signupform.password2 }}#}
+{#                <span class="field-error">#}
+{#            {{ signupform.password2.errors|striptags }}#}
+{#        </span></div>#}
+{##}
+{#    <br> <!-- Button -->#}
+{#    <div class="form-group">#}
+{#            <button id="signup" name="signup" class="btn btn- block btn-default" type="submit">Sign Up</button>#}
+{#            <hr>#}
+{#            <a href="{% url 'login_url' %}"><u>log in</u></a> if you have an account.#}
+{#    </div>#}
+{#</form>#}
+
+{%  endblock content %}

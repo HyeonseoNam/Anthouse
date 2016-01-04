@@ -1,0 +1,67 @@
+
+{% extends "./photo/base.html" %}
+{% block content %}
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#loginModal').modal('show')
+});
+</script>
+
+<!--login modal-->
+
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+  <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h1 class="text-center">로그인</h1>
+        </div>
+        <div class="modal-body">
+          <form class="form col-md-12 center-block" method="POST" action="{% url "django.contrib.auth.views.login" %}" name="loginform">
+              {% csrf_token %}
+            <div class="form-group">
+              <input id="login_input_username" name="username" type="text" class="form-control input-lg" placeholder="아이디"  required >
+            </div>
+            <div class="form-group">
+              <input id="login_input_password" name="password" autocomplete="off" type="password" class="form-control input-lg" placeholder="비밀번호" required>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 15px;">로그인</button>
+              <button class="btn btn-primary btn-lg btn-block" style="margin-bottom: 15px; background-color:#337ab7">페이스북으로 로그인</button>
+              <span class="pull-right"><a href="#" style="color:#555">비밀번호 찾기</a></span>
+              <span><a href="#signupModal" style="color:#555">아이디 찾기</a></span>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="col-md-12">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">창 닫기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <header>
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1>성공투자를 위한 스마트 투자관리</h1>
+{#        <p>쉽고 빠른 스타일 쇼핑! <br> 사용자 맞춤 패션 추천! <br> 간편한 인터페이스!</p>#}
+
+        <form method="GET" action="index.php" class="col-lg-12">
+          <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
+{#            <input class="form-control input-lg" title="fashion search" placeholder="어떤 패션을 검색하시겠어요?" type="text" name="search">#}
+{#            <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">검색</button></span>#}
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </header>
+
+{%  endblock content %}
