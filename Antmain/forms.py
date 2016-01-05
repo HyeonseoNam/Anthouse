@@ -16,16 +16,13 @@ class SignupForm(UserCreationForm):
         )
     )
 
-        # regex=r'^[\w.@+-]+$',
-
-
-    username = forms.RegexField(label="Username",
-                                max_length=30,
-                                regex=r'[a-zA-Z0-9]+',
-                                help_text="Required. 30 characters or fewer. Letters, digits and " "@/./+/-/_ only.",
-                                error_messages={ 'invalid': "This value may contain only letters, numbers and " "@/./+/-/_ characters."},
-                                widget=forms.TextInput(
-                                    attrs={ 'class': 'form-control', 'placeholder': 'Username', 'required': 'true', }))
+    # username = forms.RegexField(label="Username",
+    #                             max_length=30,
+    #                             regex=r'[a-zA-Z0-9]+',
+    #                             help_text="Required. 30 characters or fewer. Letters, digits and " "@/./+/-/_ only.",
+    #                             error_messages={ 'invalid': "This value may contain only letters, numbers and " "@/./+/-/_ characters."},
+    #                             widget=forms.TextInput(
+    #                                 attrs={ 'class': 'form-control', 'placeholder': 'Username', 'required': 'true', }))
 
     password1 = forms.CharField(label="Password",
                                 widget=forms.PasswordInput(
@@ -45,7 +42,7 @@ class SignupForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ("username", "email", "password1", "password2",)
+        fields = ("email", "password1", "password2",)
 
 
 class PhotoEditForm(forms.ModelForm):

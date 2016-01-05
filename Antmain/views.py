@@ -17,7 +17,10 @@ def post_list(request):
     return render(request, 'admin-html/index.html', {'posts' : posts})
 
 def test_page(request):
-    return render(request, 'photo/test.html', )
+    return render(request, 'photo/test.html',  )
+
+def register(request):
+    return render(request, 'registration/signup.html',  )
 
 # def login_user(request):
 #     logout(request)

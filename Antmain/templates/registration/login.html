@@ -1,67 +1,75 @@
+{% extends "admin-html/base.html" %}
 
-{% extends "./photo/base.html" %}
+
+
 {% block content %}
-
-<script type="text/javascript">
-$(document).ready(function(){
-    $('#loginModal').modal('show')
-});
-</script>
-
-<!--login modal-->
-
-{% if form.errors %}
-<p>Your username and password didn't match. Please try again.</p>
-{% endif %}
-
-  <div id="loginModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h1 class="text-center">로그인</h1>
-        </div>
-        <div class="modal-body">
-          <form class="form col-md-12 center-block" method="POST" action="{% url "django.contrib.auth.views.login" %}" name="loginform">
-              {% csrf_token %}
-            <div class="form-group">
-              <input id="login_input_username" name="username" type="text" class="form-control input-lg" placeholder="아이디"  required >
+    <body class="login-page">
+        <!-- Start login container -->
+        <div class="container login-container">
+            <div class="login-panel panel panel-default plain animated bounceIn">
+                <!-- Start .panel -->
+                <div class="panel-heading">
+                    <h4 class="panel-title text-center">
+                        <img id="logo" src="../../static/img/logo-dark.png" alt="Dynamic logo">
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal mt0" method="POST" action="{% url "django.contrib.auth.views.login" %}" id="login-form" role="form">
+                                      {% csrf_token %}
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div class="input-group input-icon">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input type="text" name="email" id="email" class="form-control" value="admin@dynamic.com" placeholder="Your email ...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <div class="input-group input-icon">
+                                    <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                                    <input type="password" name="password" id="password" class="form-control" value="somepass" placeholder="Your password">
+                                </div>
+                                <span class="help-block text-right"><a href="#">Forgout password ?</a></span> 
+                            </div>
+                        </div>
+                        <div class="form-group mb0">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-8">
+                                <div class="checkbox-custom">
+                                    <input type="checkbox" name="remember" id="remember" value="option">
+                                    <label for="remember">Remember me ?</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-4 mb25">
+                                <button class="btn btn-default pull-right" type="submit">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="seperator">
+                        <strong>or</strong>
+                        <hr>
+                    </div>
+                    <div class="social-buttons text-center mt5 mb5">
+                        <a href="#" class="btn btn-primary btn-alt mr10">Sign in with <i class="fa fa-facebook s20 ml5 mr0"></i></a> 
+                        <a href="#" class="btn btn-danger btn-alt ml10">Sign in with <i class="fa fa-google-plus s20 ml5 mr0"></i></a> 
+                    </div>
+                </div>
+                <div class="panel-footer gray-lighter-bg bt">
+                    <h4 class="text-center"><strong>Don`t have an account ?</strong>
+                    </h4>
+                    <p class="text-center"><a href="{% url "registration" %}" class="btn btn-primary">Create account</a>
+                    </p>
+                </div>
             </div>
-            <div class="form-group">
-              <input id="login_input_password" name="password" autocomplete="off" type="password" class="form-control input-lg" placeholder="비밀번호" required>
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-lg btn-block" style="margin-bottom: 15px;">로그인</button>
-              <button class="btn btn-primary btn-lg btn-block" style="margin-bottom: 15px; background-color:#337ab7">페이스북으로 로그인</button>
-              <span class="pull-right"><a href="#" style="color:#555">비밀번호 찾기</a></span>
-              <span><a href="#signupModal" style="color:#555">아이디 찾기</a></span>
-            </div>
-          </form>
+            <!-- End .panel -->
         </div>
-        <div class="modal-footer">
-          <div class="col-md-12">
-            <button class="btn" data-dismiss="modal" aria-hidden="true">창 닫기</button>
-          </div>
+        <!-- End login container -->
+        <div class="container">
+            <div class="footer">
+                <p class="text-center">&copy;2014 Copyright Dynamic admin. All right reserved !!!</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+     {%  endblock content %}
 
-    <header>
-    <div class="header-content">
-      <div class="header-content-inner">
-        <h1>성공투자를 위한 스마트 투자관리</h1>
-{#        <p>쉽고 빠른 스타일 쇼핑! <br> 사용자 맞춤 패션 추천! <br> 간편한 인터페이스!</p>#}
-
-        <form method="GET" action="index.php" class="col-lg-12">
-          <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
-{#            <input class="form-control input-lg" title="fashion search" placeholder="어떤 패션을 검색하시겠어요?" type="text" name="search">#}
-{#            <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">검색</button></span>#}
-          </div>
-        </form>
-
-      </div>
-    </div>
-  </header>
-
-{%  endblock content %}
+    </body>
+</html>
