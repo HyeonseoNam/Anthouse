@@ -41,7 +41,7 @@ def signup(request):
         signupform = SignupForm(request.POST)
         if signupform.is_valid():
             user = signupform.save(commit=False)
-            user.email = signupform.cleaned_data['email']
+            # user.email = signupform.cleaned_data['email']
             user.save()
 
             return HttpResponseRedirect(

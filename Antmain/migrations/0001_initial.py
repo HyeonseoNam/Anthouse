@@ -13,10 +13,10 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Photo',
             fields=[
-                ('id', models.AutoField(serialize=False, auto_created=True, verbose_name='ID', primary_key=True)),
+                ('id', models.AutoField(auto_created=True, serialize=False, primary_key=True, verbose_name='ID')),
                 ('image_file', models.ImageField(upload_to='%Y/%m/%d')),
                 ('filtered_image_file', models.ImageField(upload_to='static_files/uploaded/%Y/%m/%d')),
-                ('description', models.TextField(max_length=500, blank=True)),
+                ('description', models.TextField(blank=True, max_length=500)),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
             ],
         ),
