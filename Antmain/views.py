@@ -7,7 +7,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
 from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
-from Antmain.forms import SignupForm ,PhotoEditForm
+from Antmain.forms import PhotoEditForm
 
 def single_photo(request, photo_id):
     return HttpResponse('{0}번 사진입니다'.format(photo_id))
@@ -35,24 +35,6 @@ def register(request):
 #                 login(request, user)
 #                 return HttpResponseRedirect('/main/')
 #     return render_to_response('photo/index.html', context_instance=RequestContext(request))
-
-def signup(request):
-    if request.method == "POST":
-        signupform = SignupForm(request.POST)
-        if signupform.is_valid():
-            user = signupform.save(commit=False)
-            # user.email = signupform.cleaned_data['email']
-            user.save()
-
-            return HttpResponseRedirect(
-                reverse("signup_ok")
-            )
-    elif request.method =="GET":
-            signupform = SignupForm()
-
-    return render(request, "registration/signup.html", {
-         "signupform": signupform,
-    })
 
 def new_photo(request):
     if request.method == "GET":

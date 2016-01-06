@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
     'Antmain',
 )
 
@@ -101,6 +102,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIR = [os.path.join(BASE_DIR, 'Antmain', 'static'),]
+#위에 끝에 static이 antmain static에 상관은 없음#
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),

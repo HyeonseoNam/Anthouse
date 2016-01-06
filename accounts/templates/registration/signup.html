@@ -1,4 +1,5 @@
 {% extends "admin-html/base.html" %}
+{%  load staticfiles %}
 
 
 
@@ -10,7 +11,7 @@
                 <!-- Start .panel -->
                 <div class="panel-heading">
                     <h4 class="panel-title text-center">
-                        <img id="logo" src="../../static/img/logo-dark.png" alt="Dynamic logo">
+                        <img id="logo" src="{% static "img/logo-dark.png" %}" alt="Dynamic logo">
                     </h4>
                 </div>
                 <div class="panel-body">

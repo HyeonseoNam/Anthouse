@@ -34,8 +34,8 @@
 {#        <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->#}
 {#        <meta name="msapplication-TileColor" content="#3399cc" />#}
 {#    </head>#}
-
 {% extends "admin-html/base.html" %}
+{%  load staticfiles %}
 
 
 
@@ -131,10 +131,20 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="{% url "login_url" %}">
+                        {% if user.is_authenticated %}
+                        <a href="{% url "logout_url" %}">
                             <i class="fa fa-power-off"></i>
                             <span class="sr-only">Logout</span>
                         </a>
+                            {% else %}
+                        <a href="{% url "login_url" %}">
+                            <i class="fa fa-pencil"></i>
+                            <span class="sr-only">Login</span>
+                        </a>
+                            {%  endif %}
+
+
+
                     </li>
                     <li>
                         <a id="toggle-right-sidebar" href="#" class="tipB" title="Toggle right sidebar">
@@ -162,8 +172,15 @@
                         </div>
                         <!-- / .sidebar-panel -->
                         <div class="user-info clearfix">
-                            <img src="../../static/img/avatars/128.jpg" alt="avatar">
-                            <span class="name">SuggeElson</span>
+
+                            {% if user.is_authenticated %}
+                            <img src="{% static 'img/avatars/128.jpg' %}" alt="avatar">
+                            <span class="name">{{ user.username }}</span>
+                            {% else %}
+                            <img src="{% static 'img/avatars/128.jpg' %}" alt="avatar">
+                            <span class="name"> Guest</span>
+                            {%  endif %}
+
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default btn-xs"><i class="l-basic-gear"></i>
                                 </button>
@@ -178,7 +195,7 @@
                                     </li>
                                     <li class="divider"></li>
 {#                                    <li><a href="login.html"><i class="fa fa-power-off"></i>Logout</a>#}
-                                    <li><a href="{% url "login_url"%}"><i class="fa fa-power-off"></i>Logout</a>
+                                    <li><a href="{% url "logout_url"%}"><i class="fa fa-power-off"></i>Logout</a>
                                     </li>
                                 </ul>
                             </div>
@@ -472,7 +489,7 @@
                                         <ul class="user-list list-group">
                                             <li class="list-group-item clearfix">
                                                 <a href="#">
-                                                    <img src="img/avatars/2.jpg" alt="avatar" class="avatar">
+                                                    <img src="{% static "img/avatars/2.jpg" %}" alt="avatar" class="avatar">
                                                     <span class="name">Dean Huges</span>
                                                     <span class="status status-online">online</span>
                                                 </a>
@@ -482,7 +499,7 @@
                                                         </li>
                                                         <li>
                                                             <div class="avatar">
-                                                                <img src="img/avatars/2.jpg" alt="@chadengle">
+                                                                <img src="{% static "img/avatars/2.jpg" %}" alt="@chadengle">
                                                             </div>
                                                             <p class="chat-name">Dean Huges <span class="chat-time">15 sec ago</span>
                                                             </p>
@@ -1082,7 +1099,7 @@
                                         <ul class="list-group recent-comments">
                                             <li class="list-group-item clearfix comment-success">
                                                 <div class="avatar pull-left mr15">
-                                                    <img src="img/avatars/2.jpg" alt="avatar">
+                                                    <img src="{% static "img/avatars/2.jpg" %}" alt="avatar">
                                                 </div>
                                                 <p class="text-ellipsis"><span class="name strong">Ben Simpson: </span> Very happy with your support is really great, keep that quality.</p>
                                                 <span class="date text-muted small pull-left">Dec 18, 2014, 4:24 pm</span>

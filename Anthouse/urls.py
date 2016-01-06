@@ -15,17 +15,17 @@ Including another URLconf
 """
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
 from django.views.generic import TemplateView
 
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'',include('Antmain.urls')),
+    url(r'',include('Antmain.urls', namespace='antmain')),
+    #     {% url "antmain:login_url" post_pk %}
+    url(r'accounts/', include('accounts.urls')),
+    url(r'accounts/', include('django.contrib.auth.urls')),
 
-    url(r'^accounts/login/$', 'django.contrib.auth.views.login', name='login_url'),
-    # url(r'^accounts/signup/$', 'Antmain.views.register', name='registration'),
-    url(r'^accounts/signup/$', 'Antmain.views.signup', name='signup'),
-    url(r'^accounts/signup_ok/$', TemplateView.as_view(template_name='registration/signup_ok.html'), name='signup_ok'),
-    url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}, name='logout_url'),
 
 ]
