@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'accounts',
     'Antmain',
+    'blog',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -106,8 +107,15 @@ STATICFILES_DIR = [os.path.join(BASE_DIR, 'Antmain', 'static'),]
 #위에 끝에 static이 antmain static에 상관은 없음#
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+MEDIA_URL = '/uploads/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploaded_files')
+
+
+
+
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR,  'templates'),
 )
 
 LOGIN_REDIRECT_URL = '/'
+

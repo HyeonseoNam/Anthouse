@@ -24,8 +24,15 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'',include('Antmain.urls', namespace='antmain')),
     #     {% url "antmain:login_url" post_pk %}
+    url(r'blog/',include('blog.urls')),
+    # url(r'',include('blog.urls', namespace='blog')),
     url(r'accounts/', include('accounts.urls')),
     url(r'accounts/', include('django.contrib.auth.urls')),
 
 
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(
+        settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
+    )
