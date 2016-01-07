@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    {%  load staticfiles %}
+
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}" />
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class ="col-sm-12">
+            <div class="alert alert-danger">
+                정말 삭제하시겠습니까?
+            </div>
+            <p> {{ post.title }}</p>
+
+            <form action="" method="post">
+                {% csrf_token %}
+                <input type="submit" value="예. 삭제하겠습니다." class="btn btn-danger"/>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
