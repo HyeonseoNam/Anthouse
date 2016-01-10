@@ -22,7 +22,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'',include('Antmain.urls', namespace='antmain')),
+    url(r'',include('Antmain.urls')),
     #     {% url "antmain:login_url" post_pk %}
     url(r'blog/',include('blog.urls', namespace='blog')),
     url(r'accounts/', include('accounts.urls')),
