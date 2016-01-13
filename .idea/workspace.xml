@@ -2,6 +2,334 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51ab969-97c3-4954-a92e-6a1ed9db48c4" name="Default" comment="사이드 네비게이션 수정 / Chart 추가 new">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/01521_HD.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/images/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/images/bicycle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/images/bicycle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/images/car.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/images/car.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIcon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconBlack.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconH.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconHBlack.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectBig.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectBigBlack.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectBigBlackH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectBigH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectSmall.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectSmallBlack.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectSmallBlackH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectSmallH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundBig.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundBigBlack.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundBigBlackH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundBigH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundSmall.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundSmallBlack.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundSmallBlackH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundSmallH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/eraserIcon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/eraserIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/eraserIconH.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/eraserIconH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/export.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/exportWhite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/lens.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/lensWhite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/lensWhite_old.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/lens_old.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/images/motorcycle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/images/motorcycle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/images/overlay1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/images/overlay2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/images/overlay3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/images/overlay4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/chalk/pattern1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/chalk/pattern1r.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/chalk/pattern2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/chalk/pattern3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/chalk/pattern4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/chalk/pattern5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/chalk/pattern6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/black/pattern9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/patterns/white/pattern9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/pencilIcon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/pencilIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/pencilIconH.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/pencilIconH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/test.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/test_BZM56ng.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/test_VQogkV8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/xIcon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/xIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/xIconH.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/xIconH.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/migrations/0002_comment.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/migrations/0003_post_photo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/migrations/0004_auto_20160107_2111.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/migrations/0005_timeline.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/1.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/10.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/11.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/12.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/13.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/14.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/15.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/16.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/17.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/18.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/19.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/2.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/20.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/21.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/22.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/23.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/24.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/25.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/26.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/27.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/28.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/29.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/3.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/30.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/31.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/4.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/5.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/6.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/7.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/8.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/shapes/9.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/FileSaver.js/FileSaver.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/FileSaver.js/FileSaver.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/xlsx/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/MSFT.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/MSFT_events.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/TXN.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/_JSON_intradayData.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/_JSON_stockDrawingTrendLines.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/_JSON_stockEvents.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/_JSON_stockMultipleDataSets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/_JSON_stockMultiplePanels.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accounts/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accounts/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/_exporting_to_multiple_formats.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/_usingThemes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accounts/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/amcharts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/amstock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accounts/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/az.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/themes/black.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/blob.js/blob.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/themes/chalk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/changeLog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/themes/dark.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/dataloader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/dataloader.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectBig.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectBigBlack.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectBigBlackH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectBigH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectSmall.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectSmallBlack.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectSmallBlackH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRectSmallH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundBig.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundBigBlack.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundBigBlackH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundBigH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundSmall.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundSmallBlack.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundSmallBlackH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/dragIconRoundSmallH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/eraserIcon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/eraserIconH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/export.config.advanced.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/export.config.default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/export.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/export.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/export.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/fabric.js/fabric.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/fabric.js/fabric.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/funnel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/funnel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/gantt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/gantt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/gantt.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/gantt_json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/gauge.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/gauge.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/gauge.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/gauge_json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/jszip/jszip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/jszip/jszip.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/lens.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/lensWhite.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/licence.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/themes/light.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/map.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/map.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/map.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/map_areas.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/map_json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/map_json_external_function.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accounts/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/mt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/themes/patterns.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/pdfmake/pdfmake.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/pdfmake/pdfmake.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/pdfmake/pdfmake.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/pencilIcon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/pencilIconH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/pie.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/pie.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/pie1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/pie1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/pie2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/pie2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/pie3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/pie3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/pie4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/pie_csv.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/pie_json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/radar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/radar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/responsive.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/responsive.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/responsive.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/rustyStockChart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/rw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/serial.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/serial.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/serial.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/serial1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/serial1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/serial2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/serial2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/data/serial2.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/serial2_json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/serial3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/serial3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/serial_csv.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/serial_json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/serial_with_dynamic_graphs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/so.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/stock.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/stock.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/stockAddRemovePanel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/stockDrawingTrendLines.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/stockEvents.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/stockIntradayData.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/stockMultipleDataSets.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/stockMultiplePanels.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/dataloader/examples/stock_csv_data_and_events.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/images/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/samples/images/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accounts/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/thirdPartySoftwareList.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/pdfmake/vfs_fonts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accounts/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/xIcon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/images/xIconH.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/xlsx/xlsx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/xlsx/xlsx.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/xlsx/xlsx.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/examples/xy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/responsive/examples/xy.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/lang/zh.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Anthouse.iws" />
@@ -128,7 +456,7 @@
       <file leaf-file-name="chart.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/chart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7013423" vertical-offset="2166" max-vertical-offset="2831">
+            <state vertical-scroll-proportion="2.8053691" vertical-offset="1539" max-vertical-offset="2831">
               <caret line="125" column="22" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -768,12 +1096,18 @@
       <option name="project" value="LOCAL" />
       <updated>1452615597744</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="사이드 네비게이션 수정 / Chart 추가 new">
+      <created>1452689252066</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1452689252066</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -784,7 +1118,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26626325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26626325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1106,13 +1440,13 @@
         <state vertical-scroll-proportion="-3.8275862" vertical-offset="3920" max-vertical-offset="23066">
           <caret line="218" column="36" selection-start-line="218" selection-start-column="36" selection-end-line="218" selection-end-column="36" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#ul#0;n#div#3;n#div#0;n#div#0;n#aside#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#ul#0;n#div#3;n#div#0;n#div#0;n#aside#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#ul#0;n#div#3;n#div#0;n#div#0;n#aside#0;n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#ul#0;n#div#3;n#div#0;n#div#0;n#aside#0;n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1233,7 +1567,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/chart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7013423" vertical-offset="2166" max-vertical-offset="2831">
+        <state vertical-scroll-proportion="2.8053691" vertical-offset="1539" max-vertical-offset="2831">
           <caret line="125" column="22" selection-start-line="125" selection-start-column="22" selection-end-line="125" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
