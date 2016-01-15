@@ -211,4 +211,3 @@ def comment_delete(request, post_pk, pk):
     })
 
 
-
