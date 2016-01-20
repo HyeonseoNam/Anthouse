@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'accounts',
     'Antmain',
     'blog',
+    'sdata',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -84,7 +85,7 @@ DATABASES = {
     # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Test',
+        'NAME': 'Anthouse',
         'USER': 'blue1028',
         'PASSWORD': 'ehdghks57',
         'HOST': 'localhost',

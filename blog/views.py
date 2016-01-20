@@ -14,7 +14,7 @@ def test(request):
             post = form.save(commit=False)
             post.author = request.user
             post.save()
-            return redirect('blog:post_detail', post.pk)
+            # return redirect('blog:post_detail', post.pk)
     else:
         form = TimelineForm()
     return render(request, 'blog/test.html', {
