@@ -1,13 +1,15 @@
 from django.http import *
 from django.shortcuts import render_to_response,redirect, render
 from django.template import RequestContext
-# from .models import Photo
+from sdata.models import Stock
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
 from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
-# from Antmain.forms import PhotoEditForm
+from .forms import SearchNameForm
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+
 #
 # def single_photo(request, photo_id):
 #     return HttpResponse('{0}번 사진입니다'.format(photo_id))
@@ -54,3 +56,28 @@ def antmain(request):
 #             'form': edit_form,
 #         }
 #     )
+
+def search_name(request):
+    # if request.method =="GET":
+    #         searchform = SearchNameForm()
+    # sdata= Stock.objects.get()
+    s = Stock.objects.get(s_name=request.POST['title'])
+
+    return render(request, "../../blog/templates/blog/test.html", {
+         # "searchform": searchform,
+        's_name' : request.POST['title'],
+        's_code' : s.s_code
+    # if Stock.objects.get(s_code=request.POST['title']) != 'Null':
+    #     return HttpResponse('%s' %Stock.objects.get(s_code=request.POST['title']))
+    # else :
+    #     return HttpResponse('실패')
+
+
+     })
+
+# class StockTitleView(ListView):
+#     model = Stock
+#     template_name = 'admin-html/blank.html'
+#     context_object_name = 'stock_list'
+#
+# search = StockTitleView.as_view()

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{%  load staticfiles %}
+
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}" />
+</head>
+<body>
+    <div class = "container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>hello django</h1>
+
+                <table class = "table table-hover table-bordered ">
+                <tbody>
+                {% for sdata in stock_list %}
+                <tr>
+                <td>
+{#                    <a href = "{% url "blog:post_detail" post.pk %}">#}
+                        {{ sdata.s_name }}
+{#                    </a>#}
+                </td>
+                </tr>
+                {% endfor %}
+
+                </tbody>
+                </table>
+
+
+{#                <a href="{% url "blog:post_create" %}" class = "btn btn-info">새 글</a>#}
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

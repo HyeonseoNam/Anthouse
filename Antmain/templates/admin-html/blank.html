@@ -48,13 +48,15 @@
         <!-- .page-navbar -->
         <div id="header" class="page-navbar">
             <!-- .navbar-brand -->
-            <a href="inde'x.html" class="navbar-brand hidden-xs hidden-sm">
+            <a href="index.html" class="navbar-brand hidden-xs hidden-sm">
                 <img src="{% static "img/logo.png" %}" class="logo hidden-xs" alt="Dynamic logo">
                 <img src="{% static "img/logosm.png" %}" class="logo-sm hidden-lg hidden-md" alt="Dynamic logo">
             </a>
             <!-- / navbar-brand -->
             <!-- .no-collapse -->
             <div id="navbar-no-collapse" class="navbar-no-collapse">
+
+
                 <!-- top left nav -->
                 <ul class="nav navbar-nav">
                     <li class="toggle-sidebar">
@@ -64,10 +66,19 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="reset-layout tipB" title="Reset panel position for this page"><i class="fa fa-history"></i></a>
+{#                        <a href="#" class="reset-layout tipB" title="Reset panel position for this page"><i class="fa fa-history"></i></a>#}
+                        <form class="navbar-form pull-left" method="post"  action="{% url 'search_name' %}" role="form">
+                            {% csrf_token %}
+                            <input type="text" class="form-control" name="title" id="title" value="" placeholder="종목 검색">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                        </form>
                     </li>
                 </ul>
+
                 <!-- / top left nav -->
+
+
+
                 <!-- top right nav -->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -663,8 +674,9 @@
                         <!-- Start .page-content-inner -->
                         <div id="page-header" class="clearfix">
                             <div class="page-header">
-                                <h2>삼성전자</h2>
-                                <span class="txt">005930 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;코스피</span>
+                                <h2>{{ s_name }}</h2>
+{#                                <h2>삼성전자</h2>#}
+                                <span class="txt">{{ s_code }} &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;코스피</span>
                             </div>
                             <div class="header-stats">
                                 <div class="spark clearfix">

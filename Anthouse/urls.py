@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'',include('Antmain.urls')),
     #     {% url "antmain:login_url" post_pk %}
     url(r'blog/',include('blog.urls', namespace='blog')),
+    url(r'sdata/',include('sdata.urls',namespace='sdata')),
     url(r'accounts/', include('accounts.urls')),
     url(r'accounts/', include('django.contrib.auth.urls')),
 
