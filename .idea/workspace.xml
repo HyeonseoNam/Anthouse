@@ -1,103 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c51ab969-97c3-4954-a92e-6a1ed9db48c4" name="Default" comment="종목코드 , 종목명 쿼리 조회 가능">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/stock_chart_sample_IZMmX8s.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_A2uVc1o.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_A6rUQjy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_DozZtHF.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_EIlFNcQ.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_G8ZnQb8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_SFKEI26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_YBs6njP.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_alr307p.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_i4sylfK.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_rGpMajZ.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_y0dDRXq.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/다운로드.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0002_auto_20160209_1655.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0003_auto_20160209_1702.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0004_auto_20160209_1708.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0005_auto_20160209_1709.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0006_stock_current_volumediff.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0007_auto_20160209_1713.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0008_auto_20160209_1719.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/templates/sdata/data_current_view.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sdata/migrations/0002_auto_20160120_2226.py" afterPath="" />
+    <list default="true" id="c51ab969-97c3-4954-a92e-6a1ed9db48c4" name="Default" comment="주가 검색기능 추가, 이미지 크기 조절 수정">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/forms.py" afterPath="$PROJECT_DIR$/Antmain/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/jszip/jszip.js" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/jszip/jszip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/pdfmake/pdfmake.js" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/pdfmake/pdfmake.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/css/main.css" afterPath="$PROJECT_DIR$/Antmain/static/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/bootstrap/bootstrap.js" afterPath="$PROJECT_DIR$/Antmain/static/js/bootstrap/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/jquery.dynamic.js" afterPath="$PROJECT_DIR$/Antmain/static/js/jquery.dynamic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/libs/less-1.7.0.js" afterPath="$PROJECT_DIR$/Antmain/static/js/libs/less-1.7.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/libs/modernizr.custom.js" afterPath="$PROJECT_DIR$/Antmain/static/js/libs/modernizr.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/main.js" afterPath="$PROJECT_DIR$/Antmain/static/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/charts-chartjs.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/charts-chartjs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/charts-flot.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/charts-flot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/charts-morris.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/charts-morris.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/charts-other.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/charts-other.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/dashboard.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/dashboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/forms-basic.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/forms-basic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/gallery.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/gallery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/profile.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/chartjs/Chart.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/chartjs/Chart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/excanvas.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/excanvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.colorhelpers.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.colorhelpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.curvedLines.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.curvedLines.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.image.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.orderBars.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.orderBars.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.pie.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.pie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.time.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.time.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/gauge/gauge.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/gauge/gauge.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/progressbars/progressbar.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/progressbars/progressbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/sparklines/jquery.sparkline.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/sparklines/jquery.sparkline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/bootstrap-markdown.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/bootstrap-markdown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.kr.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.kr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.ru.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.ru.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.ua.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.ua.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-wizard/jquery.bootstrap.wizard.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-wizard/jquery.bootstrap.wizard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/hint/javascript-hint.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/hint/javascript-hint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/runmode/runmode-standalone.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/runmode/runmode-standalone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/runmode/runmode.node.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/runmode/runmode.node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/tern/tern.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/tern/tern.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/codemirror.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/haxe/haxe.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/haxe/haxe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/idl/idl.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/idl/idl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/javascript/javascript.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/javascript/javascript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/jinja2/jinja2.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/jinja2/jinja2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/mllike/mllike.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/mllike/mllike.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/octave/octave.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/octave/octave.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/pegjs/pegjs.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/pegjs/pegjs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/shell/shell.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/shell/shell.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/sieve/sieve.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/sieve/sieve.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/sql/sql.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/sql/sql.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/vbscript/vbscript.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/vbscript/vbscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/xquery/xquery.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/xquery/xquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/yaml/yaml.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/yaml/yaml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/dropzone/dropzone-amd-module.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/dropzone/dropzone-amd-module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/dropzone/dropzone.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/dropzone/dropzone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/maskedinput/jquery.maskedinput.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/maskedinput/jquery.maskedinput.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/select2/_locale/select2_locale_cs.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/select2/_locale/select2_locale_cs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/select2/select2.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/select2/select2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/summernote/summernote.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/summernote/summernote.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/validation/jquery.validate.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/validation/jquery.validate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/misc/gmaps/gmaps.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/misc/gmaps/gmaps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/tables/editable-table/numeric-input-example.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/tables/editable-table/numeric-input-example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/ui/bootstrap-sweetalert/sweet-alert.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/ui/bootstrap-sweetalert/sweet-alert.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/ui/calendar/fullcalendar.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/ui/calendar/fullcalendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/ui/notify/jquery.gritter.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/ui/notify/jquery.gritter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/ui/tabdrop/bootstrap-tabdrop.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/ui/tabdrop/bootstrap-tabdrop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/ui/title-notifier/title_notifier.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/ui/title-notifier/title_notifier.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/templates/admin-html/blank.html" afterPath="$PROJECT_DIR$/Antmain/templates/admin-html/blank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/views.py" afterPath="$PROJECT_DIR$/Antmain/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/test.html" afterPath="$PROJECT_DIR$/blog/templates/blog/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdata/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/sdata/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdata/models.py" afterPath="$PROJECT_DIR$/sdata/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdata/urls.py" afterPath="$PROJECT_DIR$/sdata/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdata/views.py" afterPath="$PROJECT_DIR$/sdata/views.py" />
     </list>
     <ignored path="Anthouse.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -171,8 +76,8 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/templates/blog/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9236948">
-              <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.65474796">
+              <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -840,7 +745,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453384541704</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="주가 검색기능 추가, 이미지 크기 조절 수정">
+      <created>1455020801558</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1455020801558</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -854,13 +765,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-520" width="1096" height="1896" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27123553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27123553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295519" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.50319827" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@Anthouse" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2614861" sideWeight="0.4968017" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@Anthouse" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2614861" sideWeight="0.4968017" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -868,7 +780,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -901,7 +812,8 @@
     <MESSAGE value="사이드 네비게이션 수정 / Chart 추가 new" />
     <MESSAGE value="sdata 모델 추가" />
     <MESSAGE value="종목코드 , 종목명 쿼리 조회 가능" />
-    <option name="LAST_COMMIT_MESSAGE" value="종목코드 , 종목명 쿼리 조회 가능" />
+    <MESSAGE value="주가 검색기능 추가, 이미지 크기 조절 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="주가 검색기능 추가, 이미지 크기 조절 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1288,8 +1200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9236948">
-          <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.65474796">
+          <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
