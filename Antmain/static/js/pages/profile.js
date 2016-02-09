@@ -34,7 +34,7 @@ $(document).ready(function() {
 	//animate bar only when reach the bottom of screen
 	$('.animated-bar .progress-bar').waypoint(function(direction) {
 		$(this).progressbar({display_text: 'fill'});
-	}, { offset: 'bottom-in-view' })
+	}, { offset: 'bottom-in-view' });
 
 
 	//define chart colours first
@@ -47,7 +47,7 @@ $(document).ready(function() {
 		gray_lighter: '#e8ecf1',
 		gray_light: '#777777',
 		gridColor: '#bfbfbf'
-	}
+	};
 
 	//convert the object to array for flot use
 	var chartColoursArr = Object.keys(chartColours).map(function (key) {return chartColours[key]});

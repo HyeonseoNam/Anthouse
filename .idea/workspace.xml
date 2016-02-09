@@ -1,15 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c51ab969-97c3-4954-a92e-6a1ed9db48c4" name="Default" comment="sdata 모델 추가">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/templates/sdata/data_view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/urls.py" />
+    <list default="true" id="c51ab969-97c3-4954-a92e-6a1ed9db48c4" name="Default" comment="종목코드 , 종목명 쿼리 조회 가능">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/stock_chart_sample_IZMmX8s.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_A2uVc1o.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_A6rUQjy.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_DozZtHF.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_EIlFNcQ.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_G8ZnQb8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_SFKEI26.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_YBs6njP.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_alr307p.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_i4sylfK.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_rGpMajZ.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/그래프_y0dDRXq.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uploaded_files/다운로드.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0002_auto_20160209_1655.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0003_auto_20160209_1702.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0004_auto_20160209_1708.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0005_auto_20160209_1709.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0006_stock_current_volumediff.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0007_auto_20160209_1713.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/migrations/0008_auto_20160209_1719.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdata/templates/sdata/data_current_view.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdata/migrations/0002_auto_20160120_2226.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Anthouse/urls.py" afterPath="$PROJECT_DIR$/Anthouse/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/forms.py" afterPath="$PROJECT_DIR$/Antmain/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/jszip/jszip.js" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/jszip/jszip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/pdfmake/pdfmake.js" afterPath="$PROJECT_DIR$/Antmain/static/amstockchart/amcharts/plugins/export/libs/pdfmake/pdfmake.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/css/main.css" afterPath="$PROJECT_DIR$/Antmain/static/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/bootstrap/bootstrap.js" afterPath="$PROJECT_DIR$/Antmain/static/js/bootstrap/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/jquery.dynamic.js" afterPath="$PROJECT_DIR$/Antmain/static/js/jquery.dynamic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/libs/less-1.7.0.js" afterPath="$PROJECT_DIR$/Antmain/static/js/libs/less-1.7.0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/libs/modernizr.custom.js" afterPath="$PROJECT_DIR$/Antmain/static/js/libs/modernizr.custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/main.js" afterPath="$PROJECT_DIR$/Antmain/static/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/charts-chartjs.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/charts-chartjs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/charts-flot.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/charts-flot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/charts-morris.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/charts-morris.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/charts-other.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/charts-other.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/dashboard.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/forms-basic.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/forms-basic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/gallery.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/gallery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/js/pages/profile.js" afterPath="$PROJECT_DIR$/Antmain/static/js/pages/profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/chartjs/Chart.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/chartjs/Chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/excanvas.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/excanvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.colorhelpers.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.colorhelpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.curvedLines.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.curvedLines.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.image.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.orderBars.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.orderBars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.pie.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.pie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.time.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/flot/jquery.flot.time.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/gauge/gauge.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/gauge/gauge.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/progressbars/progressbar.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/progressbars/progressbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/charts/sparklines/jquery.sparkline.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/charts/sparklines/jquery.sparkline.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/bootstrap-markdown.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/bootstrap-markdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.kr.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.kr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.ru.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.ua.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-markdown/locale/bootstrap-markdown.ua.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-wizard/jquery.bootstrap.wizard.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/bootstrap-wizard/jquery.bootstrap.wizard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/hint/javascript-hint.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/hint/javascript-hint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/runmode/runmode-standalone.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/runmode/runmode-standalone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/runmode/runmode.node.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/runmode/runmode.node.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/tern/tern.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/addons/tern/tern.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/codemirror.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/haxe/haxe.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/haxe/haxe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/idl/idl.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/idl/idl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/javascript/javascript.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/javascript/javascript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/jinja2/jinja2.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/jinja2/jinja2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/mllike/mllike.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/mllike/mllike.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/octave/octave.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/octave/octave.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/pegjs/pegjs.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/pegjs/pegjs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/shell/shell.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/shell/shell.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/sieve/sieve.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/sieve/sieve.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/sql/sql.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/sql/sql.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/vbscript/vbscript.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/vbscript/vbscript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/xquery/xquery.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/xquery/xquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/yaml/yaml.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/codemirror/lang/yaml/yaml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/dropzone/dropzone-amd-module.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/dropzone/dropzone-amd-module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/dropzone/dropzone.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/dropzone/dropzone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/maskedinput/jquery.maskedinput.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/maskedinput/jquery.maskedinput.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/select2/_locale/select2_locale_cs.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/select2/_locale/select2_locale_cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/select2/select2.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/select2/select2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/summernote/summernote.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/summernote/summernote.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/forms/validation/jquery.validate.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/forms/validation/jquery.validate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/misc/gmaps/gmaps.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/misc/gmaps/gmaps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/tables/editable-table/numeric-input-example.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/tables/editable-table/numeric-input-example.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/ui/bootstrap-sweetalert/sweet-alert.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/ui/bootstrap-sweetalert/sweet-alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/ui/calendar/fullcalendar.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/ui/calendar/fullcalendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/ui/notify/jquery.gritter.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/ui/notify/jquery.gritter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/ui/tabdrop/bootstrap-tabdrop.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/ui/tabdrop/bootstrap-tabdrop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/static/plugins/ui/title-notifier/title_notifier.js" afterPath="$PROJECT_DIR$/Antmain/static/plugins/ui/title-notifier/title_notifier.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/templates/admin-html/blank.html" afterPath="$PROJECT_DIR$/Antmain/templates/admin-html/blank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/urls.py" afterPath="$PROJECT_DIR$/Antmain/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antmain/views.py" afterPath="$PROJECT_DIR$/Antmain/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/blog/test.html" afterPath="$PROJECT_DIR$/blog/templates/blog/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdata/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/sdata/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdata/models.py" afterPath="$PROJECT_DIR$/sdata/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdata/urls.py" afterPath="$PROJECT_DIR$/sdata/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sdata/views.py" afterPath="$PROJECT_DIR$/sdata/views.py" />
     </list>
     <ignored path="Anthouse.iws" />
@@ -39,50 +126,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="blank.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Antmain/templates/admin-html/blank.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3793104">
-              <caret line="678" column="59" selection-start-line="678" selection-start-column="59" selection-end-line="678" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sdata/templates/sdata/data_view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.607142">
-              <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Antmain/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5177665">
+            <state vertical-scroll-proportion="0.0">
               <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
@@ -91,43 +138,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Antmain/forms.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+              <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sdata/models.py">
+        <entry file="file://$PROJECT_DIR$/blog/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sdata/views.py">
+      <file leaf-file-name="post_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.607142">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sdata/urls.py">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/templates/blog/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.9236948">
+              <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blank.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Antmain/templates/admin-html/blank.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.965517">
+              <caret line="71" column="79" selection-start-line="71" selection-start-column="79" selection-end-line="71" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -138,8 +195,28 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Antmain/static/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.755814">
+              <caret line="1825" column="19" selection-start-line="1825" selection-start-column="19" selection-end-line="1825" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sdata/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
               <folding>
-                <element signature="e#0#52#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -179,7 +256,6 @@
         <option value="$PROJECT_DIR$/Antmain/static/css/less/anthouse.css" />
         <option value="$PROJECT_DIR$/Antmain/templates/admin-html/base.html" />
         <option value="$PROJECT_DIR$/blog/admin.py" />
-        <option value="$PROJECT_DIR$/blog/templates/blog/test.html" />
         <option value="$PROJECT_DIR$/blog/forms.py" />
         <option value="$PROJECT_DIR$/blog/templates/blog/index.html" />
         <option value="$PROJECT_DIR$/blog/templates/blog/chart.html" />
@@ -189,15 +265,18 @@
         <option value="$PROJECT_DIR$/blog/urls.py" />
         <option value="$PROJECT_DIR$/stockdata/models.py" />
         <option value="$PROJECT_DIR$/Anthouse/settings.py" />
-        <option value="$PROJECT_DIR$/sdata/models.py" />
         <option value="$PROJECT_DIR$/Anthouse/urls.py" />
-        <option value="$PROJECT_DIR$/sdata/urls.py" />
-        <option value="$PROJECT_DIR$/sdata/views.py" />
         <option value="$PROJECT_DIR$/sdata/templates/sdata/data_view.html" />
-        <option value="$PROJECT_DIR$/Antmain/forms.py" />
         <option value="$PROJECT_DIR$/Antmain/urls.py" />
-        <option value="$PROJECT_DIR$/Antmain/views.py" />
+        <option value="$PROJECT_DIR$/sdata/templates/sdata/data_current_view.html" />
+        <option value="$PROJECT_DIR$/sdata/urls.py" />
+        <option value="$PROJECT_DIR$/Antmain/forms.py" />
+        <option value="$PROJECT_DIR$/sdata/views.py" />
+        <option value="$PROJECT_DIR$/sdata/models.py" />
+        <option value="$PROJECT_DIR$/Antmain/static/css/main.css" />
         <option value="$PROJECT_DIR$/Antmain/templates/admin-html/blank.html" />
+        <option value="$PROJECT_DIR$/Antmain/views.py" />
+        <option value="$PROJECT_DIR$/blog/templates/blog/test.html" />
       </list>
     </option>
   </component>
@@ -207,10 +286,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1912" />
+    <option name="y" value="-520" />
+    <option name="width" value="1096" />
+    <option name="height" value="1896" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -237,6 +316,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -283,28 +364,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sdata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sdata" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -355,60 +414,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accounts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accounts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="registration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Antmain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -428,50 +433,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Antmain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin-html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Antmain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,8 +452,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,23 +463,24 @@
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="blank&#9;FILE&#9;file://D:/Github/Anthouse/Antmain/templates/admin-html/blank.html&#10;index&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/index.html&#10;chart&#9;null&#9;null&#10;test&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/blog/templates/blog/test.html&#10;form&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/forms-basic.html&#10;f&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/forms-basic.html&#10;fo&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/forms-basic.html&#10;basi&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/forms-basic.html&#10;button&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/buttons.html&#10;login&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/accounts/templates/registration/login.html&#10;por&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/portlets.html" />
+    <property name="SearchEverywhereHistoryKey" value="blank&#9;FILE&#9;file://D:/Github/Anthouse/Antmain/templates/admin-html/blank.html&#10;clearfix&#9;FILE&#9;file://D:/Github/Anthouse/Antmain/static/css/less/bootstrap/mixins/clearfix.less&#10;index&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/index.html&#10;chart&#9;null&#9;null&#10;test&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/blog/templates/blog/test.html&#10;form&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/forms-basic.html&#10;f&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/forms-basic.html&#10;fo&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/forms-basic.html&#10;basi&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/forms-basic.html&#10;button&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/buttons.html&#10;login&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/accounts/templates/registration/login.html&#10;por&#9;FILE&#9;file://C:/Users/송동환/Documents/GitHub/Anthouse/Antmain/templates/admin-html/portlets.html" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\Anthouse\sdata\templates\sdata" />
+      <recent name="D:\Github\Anthouse\sdata" />
+      <recent name="C:\Users\송동환\Documents\GitHub\Anthouse\accounts\templates" />
+      <recent name="D:\github\Anthouse\Antmain\templates\admin-html" />
+      <recent name="D:\github\Anthouse\Antmain\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\송동환\Documents\GitHub\Anthouse\Antmain\static" />
       <recent name="C:\Users\송동환\Documents\GitHub\Anthouse\Antmain\static\css" />
       <recent name="D:\github\Anthouse\Antmain\templates\registration" />
       <recent name="D:\github\Anthouse\Antmain" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Github\Anthouse\sdata" />
-      <recent name="C:\Users\송동환\Documents\GitHub\Anthouse\accounts\templates" />
-      <recent name="D:\github\Anthouse\Antmain\templates\admin-html" />
-      <recent name="D:\github\Anthouse\Antmain\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Django Console">
@@ -874,7 +834,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453296708340</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="종목코드 , 종목명 쿼리 조회 가능">
+      <created>1453384541704</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1453384541704</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -887,31 +853,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-520" width="1096" height="1896" extended-state="6" />
+    <editor active="false" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27123553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.50319827" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30985916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14498934" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@Anthouse" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4968017" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@Anthouse" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2614861" sideWeight="0.4968017" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30985916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -934,7 +900,8 @@
     <MESSAGE value="사이드 네비게이션 수정 / Chart 추가" />
     <MESSAGE value="사이드 네비게이션 수정 / Chart 추가 new" />
     <MESSAGE value="sdata 모델 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="sdata 모델 추가" />
+    <MESSAGE value="종목코드 , 종목명 쿼리 조회 가능" />
+    <option name="LAST_COMMIT_MESSAGE" value="종목코드 , 종목명 쿼리 조회 가능" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -943,27 +910,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Antmain/templates/admin-html/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.107142">
-          <caret line="113" column="65" selection-start-line="113" selection-start-column="65" selection-end-line="113" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Antmain/templates/admin-html/forms-basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6034484">
-          <caret line="35" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Antmain/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -975,13 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.464286">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1000,13 +939,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Antmain/static/before/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Antmain/static/before/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1045,7 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="133" column="28" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,7 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="449" column="33" selection-start-line="449" selection-start-column="33" selection-end-line="449" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,7 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="215" column="58" selection-start-line="215" selection-start-column="58" selection-end-line="215" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,7 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,7 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,7 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1101,7 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1109,7 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,7 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,7 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1141,41 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdata/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Anthouse/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.857142">
-          <caret line="31" column="85" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1191,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.464286">
           <caret line="17" column="84" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1207,7 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,7 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,7 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,15 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/blog/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="38.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,7 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1255,7 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.107143">
           <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1263,11 +1131,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sdata/models.py">
+    <entry file="file://$PROJECT_DIR$/sdata/templates/sdata/data_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdata/templates/sdata/data_current_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdata/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdata/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -1275,36 +1174,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Antmain/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdata/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sdata/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Anthouse/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdata/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Antmain/static/css/less/bootstrap/mixins/clearfix.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12179487">
+          <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Antmain/static/before/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36349693">
+          <caret line="6271" column="9" selection-start-line="6271" selection-start-column="1" selection-end-line="6271" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Antmain/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.755814">
+          <caret line="1825" column="19" selection-start-line="1825" selection-start-column="19" selection-end-line="1825" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/post_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.607142">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1313,34 +1256,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sdata/templates/sdata/data_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.607142">
-          <caret line="20" column="73" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Antmain/templates/admin-html/blank.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3793104">
-          <caret line="678" column="59" selection-start-line="678" selection-start-column="59" selection-end-line="678" selection-end-column="59" />
+        <state vertical-scroll-proportion="-7.965517">
+          <caret line="71" column="79" selection-start-line="71" selection-start-column="79" selection-end-line="71" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Antmain/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5177665">
+        <state vertical-scroll-proportion="0.0">
           <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/blog/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9236948">
+          <caret line="90" column="42" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

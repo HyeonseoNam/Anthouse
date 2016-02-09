@@ -30,7 +30,7 @@ $(document).ready(function() {
 	$('#checkAllExample').checkAll({
 		masterCheckbox: '.check-all',
 		otherCheckboxes: '.check'
-	})
+	});
 
 	//------------- File input styling -------------//
     $(":file").not('.unstyled').filestyle();

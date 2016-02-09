@@ -37,7 +37,7 @@ $(document).ready(function() {
 		gray_lighter: '#e8ecf1',
 		gray_light: '#777777',
 		gridColor: '#bfbfbf'
-	}
+	};
 
 	//convert the object to array for flot use
 	var chartColoursArr = Object.keys(chartColours).map(function (key) {return chartColours[key]});

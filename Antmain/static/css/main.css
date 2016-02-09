@@ -1779,6 +1779,8 @@ body.fixed-right-sidebar:not(.fixed-header) #right-sidebar.rstop {
   margin-bottom: 20px;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
+
+
 .page-content #page-header .page-header {
   margin-top: 0px;
   margin-bottom: 15px;
@@ -1786,13 +1788,51 @@ body.fixed-right-sidebar:not(.fixed-header) #right-sidebar.rstop {
   float: left;
   margin-right: 20px;
 }
+
+
+
+
 .page-content #page-header .page-header h2 {
   margin-bottom: 5px;
 }
 .page-content #page-header .header-stats {
   float: right;
-  padding: 20px;
+  padding: 15px;
 }
+
+.page-content #page-header .header-stats2 {
+  float: left;
+  padding: 15px;
+}
+
+.page-content #page-header .header-stats2 .stock-name {
+  font-size : 30px;
+  font-weight: bold;
+  float: left;
+  padding-right : 10px;
+  /*padding: 15px;*/
+}
+
+.page-content #page-header .header-stats2 .stock-code {
+  font-size : 15px;
+  float: left;
+  font-weight: bold;
+  color: #4d4d4d;
+  padding-top : 13px;
+  /*padding: 15px;*/
+}
+
+.page-content #page-header .header-stats2 .stock-codename {
+  font-size : 13px;
+  float: left;
+  margin-top : 12px;
+  margin-left : 10px;
+  border : 1px solid darkgray ;
+  padding : 1px;
+  border-radius: 2px;
+  /*padding: 15px;*/
+}
+
 /* -----------------------------------------
    Page footer
 ----------------------------------------- */
@@ -1834,14 +1874,30 @@ body.fixed-right-sidebar:not(.fixed-header) #right-sidebar.rstop {
 .spark .spark-info {
   font-size: 14px;
   text-align: left;
-  margin-bottom: 5px;
+  /*margin-bottom: 5px;*/
 }
+
 .spark .spark-info .number {
   font-weight: bold;
   font-size: 18px;
   padding-right: 5px;
-  color: #0a97b9;
+  color: #333333;
 }
+.spark .spark-info .number-up {
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 5px;
+  color: #f40006;
+}
+
+.spark .spark-info .number-down {
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 5px;
+  color: #0059d1;
+}
+
+
 .spark .sparkline {
   width: 100%;
   display: inline-block;

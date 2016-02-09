@@ -82,10 +82,11 @@
                                     <div class="panel-body">
 {#                                        <div class="scroll" data-height="170">#}
                                         <div  data-height="170">
+                                             {{ post.content|linebreaks }}
                                          {% if post.photo %}
-                                           <img src="{{ post.photo.url }}"/>
-                                        {% endif %}
-                                            {{ post.content|linebreaks }}
+{#                                           <img src="{{ post.photo.url }}"/>#}
+                                           <img style="max-width:80%"  src="{{ post.photo.url }}"/>
+                                         {% endif %}
                                         </div>
                                     </div>
                                 </div>

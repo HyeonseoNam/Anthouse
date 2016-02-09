@@ -32,7 +32,7 @@ $(document).ready(function() {
 	randNum = function(){
 		//return Math.floor(Math.random()*101);
 		return (Math.floor( Math.random()* (1+40-20) ) ) + 20;
-	}
+	};
 	
 	//------------- Line chart -------------//
 	var lineData = {
@@ -60,7 +60,7 @@ $(document).ready(function() {
 			}
 		]
 
-	}
+	};
 	var ctx = document.getElementById("line-chartjs").getContext("2d");
 	var myLineChart = new Chart(ctx).Line(lineData, {
 		responsive: true,
@@ -121,7 +121,7 @@ $(document).ready(function() {
 			}
 		]
 
-	}
+	};
 	var ctxDots = document.getElementById("line-dots-chartjs").getContext("2d");
 	var myLineDotsChart = new Chart(ctxDots).Line(lineDotsData, {
 		responsive: true,
@@ -186,7 +186,7 @@ $(document).ready(function() {
 			}
 		]
 
-	}
+	};
 	var ctx1 = document.getElementById("line-unfilled-chartjs").getContext("2d");
 	var myLineChart1 = new Chart(ctx1).Line(lineData1, {
 		responsive: true,
@@ -238,7 +238,7 @@ $(document).ready(function() {
 				data : [randNum()-5,randNum()-2,randNum()-4,randNum()-1,randNum()-3,randNum()-2,randNum()-5]
 			}
 		]
-	}
+	};
 
 	var ctxBar = document.getElementById("bar-chartjs").getContext("2d");
 	myBar = new Chart(ctxBar).Bar(barChartData, {

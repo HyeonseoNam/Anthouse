@@ -673,25 +673,54 @@
                     <div class="page-content-inner">
                         <!-- Start .page-content-inner -->
                         <div id="page-header" class="clearfix">
-                            <div class="page-header">
-                                <h2>{{ s_name }}</h2>
-{#                                <h2>삼성전자</h2>#}
-                                <span class="txt">{{ s_code }} &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;코스피</span>
+{#                            <div class="page-header ">#}
+{#                                <h2>{{ s_name }}</h2><span>{{ s_code }}&nbsp;&nbsp;&nbsp;코스피</span>#}
+{#                                <br>#}
+{#                                <div class="pull-left">#}
+{#                                    <div class>전일대비&nbsp;&nbsp;<span>{{ s2.change }}</span></div>#}
+{#                                </div>#}
+{##}
+{##}
+{#                            </div>#}
+                            <div class="header-stats2">
+                                <div class="spark clearfix">
+                                    <span class="stock-name">{{ s_name }}</span><span class="stock-code">{{ s_code }}</span>&nbsp;&nbsp;&nbsp;<span class="stock-codename">코스피</span>
+                                </div>
                             </div>
+
+
+
                             <div class="header-stats">
                                 <div class="spark clearfix">
-                                    <div class="spark-info"><span class="number">2345</span>Visitors</div>
-                                    <div id="spark-visitors" class="sparkline"></div>
+                                    <div class="spark-info">전일&nbsp;&nbsp;<span class="number">{{ s2.recprice }}</span></div>
+{#                                    <div id="spark-visitors" class="sparkline"></div>#}
                                 </div>
                                 <div class="spark clearfix">
-                                    <div class="spark-info"><span class="number">17345</span>Views</div>
-                                    <div id="spark-templateviews" class="sparkline"></div>
+                                    <div class="spark-info">고가&nbsp;&nbsp;<span class="number-up">{{ s2.high }}</span></div>
                                 </div>
                                 <div class="spark clearfix">
-                                    <div class="spark-info"><span class="number">3700$</span>Sales</div>
-                                    <div id="spark-sales" class="sparkline"></div>
+                                    <div class="spark-info">상한가&nbsp;&nbsp;<span class="number-up">{{ s2.uplmtprice }}</span></div>
                                 </div>
+                                <div class="spark clearfix">
+                                    <div class="spark-info">거래량&nbsp;&nbsp;<span class="number">{{ s2.volume }}</span></div>
+                                </div><hr>
+                                <div class="spark clearfix">
+                                    <div class="spark-info">시가&nbsp;&nbsp;<span class="number">{{ s2.openp }}</span></div>
+                                </div>
+                                <div class="spark clearfix">
+                                    <div class="spark-info">저가&nbsp;&nbsp;<span class="number-down">{{ s2.dnlmtprice }}</span></div>
+                                </div>
+                                <div class="spark clearfix">
+                                    <div class="spark-info">하한가&nbsp;&nbsp;<span class="number-down">{{ s2.high }}</span></div>
+                                </div>
+                                <div class="spark clearfix">
+                                    <div class="spark-info">거래대금&nbsp;&nbsp;<span class="number">{{ s2.valuep }}</span>백만</div>
+                                </div>
+
+
+
                             </div>
+
                         </div>
                         <!-- Start .row -->
                         <div class="row">
