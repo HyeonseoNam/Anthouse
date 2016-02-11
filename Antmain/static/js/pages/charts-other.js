@@ -37,7 +37,7 @@ $(document).ready(function() {
 		orange: '#cfa448',
 		gray_lighter: '#e8ecf1',
 		gray_light: '#777777',
-	}
+	};
 
 	//------------- Init Easy pie charts -------------//
     //pass the variables to pie chart init function
@@ -375,4 +375,4 @@ var initPieChartPage = function(lineWidth, size, animateTime, colours) {
         size: size,
         animate: animateTime
     });
-}
+};

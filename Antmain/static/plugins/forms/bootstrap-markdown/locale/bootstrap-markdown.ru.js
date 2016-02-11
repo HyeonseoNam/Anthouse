@@ -21,4 +21,4 @@
     'enter image title here': "Введите название изображения",
     'list text here': "текст списка"
   };
-}(jQuery))
+}(jQuery));

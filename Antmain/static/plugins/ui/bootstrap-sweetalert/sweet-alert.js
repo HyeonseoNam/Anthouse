@@ -193,7 +193,7 @@
     .done(function(html) {
       jQuery('body').append(html);
     });*/
-  }
+  };
 
   /*
    * Global sweetAlert function
@@ -546,7 +546,7 @@
     }
 
     // Reset confirm buttons to default class (Ugly fix)
-    $confirmBtn.className = 'confirm btn btn-lg'
+    $confirmBtn.className = 'confirm btn btn-lg';
 
     // Set confirm button to selected class
     addClass($confirmBtn, params.confirmButtonClass);

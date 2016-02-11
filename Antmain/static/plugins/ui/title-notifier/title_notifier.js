@@ -26,12 +26,10 @@
     } else {
       title.text = "(" + notificationTotal + ") " + title.text;
     }
-  };
-
+  }
   function isNumber(n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
-  };
-
+  }
   /**
    * TitleNotifier Namespace.
    */

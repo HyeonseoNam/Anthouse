@@ -50,7 +50,7 @@ $(document).ready(function() {
 		gray_lighter: '#e8ecf1',
 		gray_light: '#777777',
 		gridColor: '#bfbfbf'
-	}
+	};
 
 	//convert the object to array for flot use
 	var chartColoursArr = Object.keys(chartColours).map(function (key) {return chartColours[key]});
@@ -58,7 +58,7 @@ $(document).ready(function() {
 	//generate random number for charts
 	randNum = function(series){
 		return (Math.floor( Math.random()* (1+10-1) + series));
-	}
+	};
 
 	//-------------Line chart -------------//
 	$(function () {

@@ -1,7 +1,7 @@
 from django.http import *
 from django.shortcuts import render_to_response,redirect, render
 from django.template import RequestContext
-from sdata.models import Stock
+from sdata.models import Stock2, Stock_current
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
@@ -61,12 +61,17 @@ def search_name(request):
     # if request.method =="GET":
     #         searchform = SearchNameForm()
     # sdata= Stock.objects.get()
-    s = Stock.objects.get(s_name=request.POST['title'])
-
+    s = Stock2.objects.get(s_name=request.POST['title'])
+    s2 = Stock_current.objects.get(hname=request.POST['title'])
     return render(request, "../../blog/templates/blog/test.html", {
          # "searchform": searchform,
         's_name' : request.POST['title'],
-        's_code' : s.s_code
+        's_code' : s.s_code,
+        's2' : s2,
+
+
+
+
     # if Stock.objects.get(s_code=request.POST['title']) != 'Null':
     #     return HttpResponse('%s' %Stock.objects.get(s_code=request.POST['title']))
     # else :

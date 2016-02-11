@@ -38,7 +38,7 @@ $(document).ready(function() {
 		gray_lighter: '#e8ecf1',
 		gray_light: '#777777',
 		gridColor: '#bfbfbf'
-	}
+	};
 
 	//convert the object to array for flot use
 	var chartColoursArr = Object.keys(chartColours).map(function (key) {return chartColours[key]});
@@ -47,7 +47,7 @@ $(document).ready(function() {
 	randNum = function(){
 		//return Math.floor(Math.random()*101);
 		return (Math.floor( Math.random()* (1+40-20) ) ) + 20;
-	}
+	};
 
 	//-------------Line chart -------------//
 	$(function () {
@@ -405,7 +405,7 @@ $(document).ready(function() {
 	    for (var i = 0; i <= 10; i += 1)
 	        d3.push([i, parseInt(Math.random() * 30)]);
 	 
-	    var ds = new Array();
+	    var ds = [];
 	 
 	    ds.push({
 	     	label: "Data One",

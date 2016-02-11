@@ -37,15 +37,15 @@ $(document).ready(function() {
             elementClass: '.panel',
             highlightClass: 'highlight-panel'
         }
-	})
+	});
 
 	//update edit image modal
 	$('#edit-image').on('show.bs.modal', function (event) {
-		var button = $(event.relatedTarget) // Button that triggered the modal
+		var button = $(event.relatedTarget); // Button that triggered the modal
 		var panel = button.closest('.panel');
 		var imageName = panel.find('.panel-title').text();
 		var image = panel.find('img').attr("src");
-		var modal = $(this)
+		var modal = $(this);
 		modal.find('.modal-title').text(imageName);
 		modal.find('img').attr("src", image);
 		//center modal via method

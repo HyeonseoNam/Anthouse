@@ -17,10 +17,8 @@
 //
 function require(arg) {
     return window.less[arg.split('/')[1]];
-};
-
-
-if (typeof(window.less) === 'undefined' || typeof(window.less.nodeType) !== 'undefined') { window.less = {}; }
+}
+    if (typeof(window.less) === 'undefined' || typeof(window.less.nodeType) !== 'undefined') { window.less = {}; }
 less = window.less;
 tree = window.less.tree = {};
 less.mode = 'browser';
@@ -502,7 +500,7 @@ less.Parser = function Parser(env) {
                             if ((parserCurrentIndex < len - 1) && (input.charCodeAt(parserCurrentIndex + 1) == 47)) {
                                 return fail("unmatched `/*`");
                             }
-                            continue;
+
                     }
                 }
 
@@ -4762,7 +4760,7 @@ tree.mixin.Definition.prototype = {
                     if (isNamedFound) {
                         args.splice(i, 1);
                         i--;
-                        continue;
+
                     } else {
                         throw { type: 'Runtime', message: "Named argument for " + this.name +
                             ' ' + args[i].name + ' not found' };

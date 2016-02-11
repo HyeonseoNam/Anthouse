@@ -231,7 +231,7 @@ require.register("dropzone/lib/dropzone.js", function (exports, module) {
           if (/(^| )dz-message($| )/.test(child.className)) {
             messageElement = child;
             child.className = "dz-message";
-            continue;
+
           }
         }
         if (!messageElement) {
@@ -1515,7 +1515,7 @@ require.register("dropzone/lib/dropzone.js", function (exports, module) {
           regex = _ref[_i];
           if (regex.test(navigator.userAgent)) {
             capableBrowser = false;
-            continue;
+
           }
         }
       }
@@ -1792,4 +1792,4 @@ if (typeof exports == "object") {
 } else {
   this["Dropzone"] = require("dropzone");
 }
-})()
+})();
