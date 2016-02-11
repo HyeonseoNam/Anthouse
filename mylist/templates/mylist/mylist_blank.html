@@ -1,9 +1,12 @@
+{% load staticfiles %}
+
+
 <!doctype html>
 <!--[if lt IE 8]><html class="no-js lt-ie8"> <![endif]-->
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Other charts element | Dynamic Admin Template</title>
+        <title>AntHouse</title>
         <!-- Mobile specific metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
         <!-- Force IE9 to render in normal mode -->
@@ -16,24 +19,28 @@
         <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
         <!-- Css files -->
         <!-- Icons -->
-        <link href="css/icons.css" rel="stylesheet" />
+{#        {% static "img/avatars/2.jpg" %}#}
+        <link href="{% static "css/icons.css" %}" rel="stylesheet" />
         <!-- Bootstrap stylesheets (included template modifications) -->
-        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" />
         <!-- Plugins stylesheets (all plugin custom css) -->
-        <link href="css/plugins.css" rel="stylesheet" />
+        <link href="{% static "css/plugins.css" %}" rel="stylesheet" />
         <!-- Main stylesheets (template main css file) -->
-        <link href="css/main.css" rel="stylesheet" />
+        <link href="{% static "css/main.css" %}" rel="stylesheet" />
         <!-- Custom stylesheets ( Put your own changes here ) -->
-        <link href="css/custom.css" rel="stylesheet" />
+        <link href="{% static "css/custom.css" %}" rel="stylesheet" />
         <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
-        <link rel="icon" href="img/ico/favicon.ico" type="image/png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static "img/ico/apple-touch-icon-144-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static "img/ico/apple-touch-icon-114-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static "img/ico/apple-touch-icon-72-precomposed.png" %}">
+        <link rel="apple-touch-icon-precomposed" href="{% static "img/ico/apple-touch-icon-57-precomposed.png" %}">
+        <link rel="icon" href="{% static "img/ico/favicon.ico" %}" type="../../image/png">
         <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
         <meta name="msapplication-TileColor" content="#3399cc" />
+
+
     </head>
+
     <body>
         <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -41,13 +48,15 @@
         <!-- .page-navbar -->
         <div id="header" class="page-navbar">
             <!-- .navbar-brand -->
-            <a href="index.html" class="navbar-brand hidden-xs hidden-sm">
-                <img src="img/logo.png" class="logo hidden-xs" alt="Dynamic logo">
-                <img src="img/logosm.png" class="logo-sm hidden-lg hidden-md" alt="Dynamic logo">
+            <a href="{% url "antmain:antmain" %}" class="navbar-brand hidden-xs hidden-sm">
+                <img src="{% static "img/logo.png" %}" class="logo hidden-xs" alt="Dynamic logo">
+                <img src="{% static "img/logosm.png" %}" class="logo-sm hidden-lg hidden-md" alt="Dynamic logo">
             </a>
             <!-- / navbar-brand -->
             <!-- .no-collapse -->
             <div id="navbar-no-collapse" class="navbar-no-collapse">
+
+
                 <!-- top left nav -->
                 <ul class="nav navbar-nav">
                     <li class="toggle-sidebar">
@@ -57,10 +66,19 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="reset-layout tipB" title="Reset panel position for this page"><i class="fa fa-history"></i></a>
+{#                        <a href="#" class="reset-layout tipB" title="Reset panel position for this page"><i class="fa fa-history"></i></a>#}
+                        <form class="navbar-form pull-left" method="post"  action="{% url 'antmain:search_name' %}" role="form">
+                            {% csrf_token %}
+                            <input type="text" class="form-control" name="title" id="title" value="" placeholder="종목 검색">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                        </form>
                     </li>
                 </ul>
+
                 <!-- / top left nav -->
+
+
+
                 <!-- top right nav -->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -124,10 +142,18 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="../registration/login.html">
+                        {% if user.is_authenticated %}
+                        <a href="{% url "logout_url" %}">
                             <i class="fa fa-power-off"></i>
                             <span class="sr-only">Logout</span>
                         </a>
+                            {% else %}
+                        <a href="{% url "login_url" %}">
+                            <i class="fa fa-pencil"></i>
+                            <span class="sr-only">Login</span>
+                        </a>
+                            {%  endif %}
+
                     </li>
                     <li>
                         <a id="toggle-right-sidebar" href="#" class="tipB" title="Toggle right sidebar">
@@ -155,7 +181,7 @@
                         </div>
                         <!-- / .sidebar-panel -->
                         <div class="user-info clearfix">
-                            <img src="img/avatars/128.jpg" alt="avatar">
+                            <img src="{% static "img/avatars/128.jpg" %}" alt="avatar">
                             <span class="name">SuggeElson</span>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default btn-xs"><i class="l-basic-gear"></i>
@@ -175,152 +201,134 @@
                                 </ul>
                             </div>
                         </div>
+
+
+
+
                         <!--  .sidebar-panel -->
                         <div class="sidebar-panel">
                             <h5 class="sidebar-panel-title">Navigation</h5>
                         </div>
                         <!-- / .sidebar-panel -->
-                        <!-- .side-nav -->
+                       <!-- .side-nav -->
                         <div class="side-nav">
                             <ul class="nav">
-                                <li><a href="index.html"><i class="l-basic-laptop"></i><span class="txt">Dashboard</span></a>
-                                </li>
-                                <li><a href="http://themes.suggelab.com/#dynamic_frontend" target="_blank"><i class="l-basic-webpage"></i><span class="txt">Frontend</span><span class="label">hot</span></a>
+                                <li><a href="{% url "antmain:antmain" %}"><i class="l-basic-home"></i><span class="txt">메인</span></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="l-ecommerce-graph1"></i> <span class="txt">Charts</span></a>
-                                    <ul class="sub">
-                                        <li><a href="charts-flot.html"><span class="txt">Flot charts</span></a>
-                                        </li>
-                                        <li><a href="charts-morris.html"><span class="txt">Morris charts</span></a>
-                                        </li>
-                                        <li><a href="charts-chartjs.html"><span class="txt">Chartjs </span></a>
-                                        </li>
-                                        <li><a href="charts-other.html"><span class="txt">Other charts</span></a>
-                                        </li>
-                                    </ul>
+                                    <a href="{% url "chart:chart" %}"><i class="l-ecommerce-graph3"></i> <span class="txt">차트</span></a>
                                 </li>
+                                <li><a href="{% url "mylist:mylist" %}"><i class="l-basic-book-pencil"></i><span class="txt">종목관리</span></a>
+                                </li>
+{#                                <li><a href="http://themes.suggelab.com/#dynamic_frontend" target="_blank"><i class="l-basic-webpage"></i><span class="txt">종목관리</span><span class="label">hot</span></a>#}
+{#                                </li>#}
                                 <li>
-                                    <a href="#"><i class="l-basic-webpage-txt"></i><span class="txt">Forms</span></a>
-                                    <ul class="sub">
-                                        <li><a href="forms-basic.html"><span class="txt">Basic forms</span></a>
-                                        </li>
-                                        <li><a href="forms-advanced.html"><span class="txt">Advanced forms</span></a>
-                                        </li>
-                                        <li><a href="forms-layouts.html"><span class="txt">Form layouts</span></a>
-                                        </li>
-                                        <li><a href="forms-wizard.html"><span class="txt">Form wizard</span></a>
-                                        </li>
-                                        <li><a href="forms-validation.html"><span class="txt">Form validation</span></a>
-                                        </li>
-                                        <li><a href="code-editor.html"><span class="txt">Code editor</span></a>
-                                        </li>
-                                    </ul>
+                                    <a href="{% url "blog:post_test" %}"><i class="l-basic-webpage-txt"></i><span class="txt">종목토론</span></a>
                                 </li>
-                                <li>
-                                    <a href="#"><i class="l-software-layout-header-3columns"></i><span class="txt">Tables</span></a>
-                                    <ul class="sub">
-                                        <li><a href="tables-basic.html"><span class="txt">Basic tables</span></a>
-                                        </li>
-                                        <li><a href="tables-data.html"><span class="txt">Data tables</span></a>
-                                        </li>
-                                        <li><a href="tables-editable.html"><span class="txt">Editable tables</span></a>
-                                        </li>
-                                        <li><a href="tables-ajax.html"><span class="txt">Ajax tables</span></a>
-                                        </li>
-                                        <li><a href="tables-pricing.html"><span class="txt">Pricing tables</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="l-software-layers2"></i><span class="txt">UI Elements</span></a>
-                                    <ul class="sub">
-                                        <li><a href="icons.html"><span class="txt">Icons</span></a>
-                                        </li>
-                                        <li><a href="typography.html"><span class="txt">Typography</span></a>
-                                        </li>
-                                        <li><a href="tabs.html"><span class="txt">Tabs</span></a>
-                                        </li>
-                                        <li><a href="accordions.html"><span class="txt">Accordions</span></a>
-                                        </li>
-                                        <li><a href="buttons.html"><span class="txt">Buttons</span></a>
-                                        </li>
-                                        <li><a href="notifications.html"><span class="txt">Notifications</span></a>
-                                        </li>
-                                        <li><a href="modals.html"><span class="txt">Modals</span></a>
-                                        </li>
-                                        <li><a href="sliders.html"><span class="txt">Sliders</span></a>
-                                        </li>
-                                        <li><a href="progressbars.html"><span class="txt">Progressbars</span></a>
-                                        </li>
-                                        <li><a href="lists.html"><span class="txt">Lists</span></a>
-                                        </li>
-                                        <li><a href="grid.html"><span class="txt">Grid</span></a>
-                                        </li>
-                                        <li><a href="ui-other.html"><span class="txt">Other</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="portlets.html"><i class="l-software-layout-header"></i><span class="txt">Portlets</span><span class="label">22</span></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="l-basic-mail"></i> <span class="txt">Email</span></a>
-                                    <ul class="sub">
-                                        <li><a href="email-inbox.html"><span class="txt">Inbox</span></a>
-                                        </li>
-                                        <li><a href="email-read.html"><span class="txt">Read email</span></a>
-                                        </li>
-                                        <li><a href="email-write.html"><span class="txt">Write email</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="l-basic-geolocalize-01"></i><span class="txt">Maps</span></a>
-                                    <ul class="sub">
-                                        <li><a href="maps-google.html"><span class="txt">Google maps</span></a>
-                                        </li>
-                                        <li><a href="maps-vector.html"><span class="txt">Vector maps</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="l-basic-webpage"></i><span class="txt">Pages</span></a>
-                                    <ul class="sub">
-                                        <li><a href="../registration/login.html"><span class="txt">Login</span></a>
-                                        </li>
-                                        <li><a href="lock-screen.html"><span class="txt">Lock screen</span></a>
-                                        </li>
-                                        <li><a href="../registration/signup.html"><span class="txt">Register</span></a>
-                                        </li>
-                                        <li><a href="../../../accounts/templates/accounts/lost-password.html"><span class="txt">Lost password</span></a>
-                                        </li>
-                                        <li><a href="../../../accounts/templates/accounts/profile.html"><span class="txt">User profile</span></a>
-                                        </li>
-                                        <li><a href="calendar.html"><span class="txt">Calendar</span></a>
-                                        </li>
-                                        <li><a href="timeline.html"><span class="txt">Timeline</span></a>
-                                        </li>
-                                        <li><a href="gallery.html"><span class="txt">Gallery</span></a>
-                                        </li>
-                                        <li><a href="invoice.html"><span class="txt">Invoice</span></a>
-                                        </li>
-                                        <li><a href="blank.html"><span class="txt">Blank page</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><span class="txt">Error pages</span></a>
-                                            <ul class="sub">
-                                                <li><a href="403.html"><span class="txt">403</span></a>
-                                                </li>
-                                                <li><a href="404.html"><span class="txt">404</span></a>
-                                                </li>
-                                                <li><a href="500.html"><span class="txt">500</span></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+{#                                <li>#}
+{#                                    <a href="#"><i class="l-software-layout-header-3columns"></i><span class="txt">Tables</span></a>#}
+{#                                    <ul class="sub">#}
+{#                                        <li><a href="tables-basic.html"><span class="txt">Basic tables</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="tables-data.html"><span class="txt">Data tables</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="tables-editable.html"><span class="txt">Editable tables</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="tables-ajax.html"><span class="txt">Ajax tables</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="tables-pricing.html"><span class="txt">Pricing tables</span></a>#}
+{#                                        </li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li>#}
+{#                                    <a href="#"><i class="l-software-layers2"></i><span class="txt">UI Elements</span></a>#}
+{#                                    <ul class="sub">#}
+{#                                        <li><a href="icons.html"><span class="txt">Icons</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="typography.html"><span class="txt">Typography</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="tabs.html"><span class="txt">Tabs</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="accordions.html"><span class="txt">Accordions</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="buttons.html"><span class="txt">Buttons</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="notifications.html"><span class="txt">Notifications</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="modals.html"><span class="txt">Modals</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="sliders.html"><span class="txt">Sliders</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="progressbars.html"><span class="txt">Progressbars</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="lists.html"><span class="txt">Lists</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="grid.html"><span class="txt">Grid</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="ui-other.html"><span class="txt">Other</span></a>#}
+{#                                        </li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li><a href="portlets.html"><i class="l-software-layout-header"></i><span class="txt">Portlets</span><span class="label">22</span></a>#}
+{#                                </li>#}
+{#                                <li>#}
+{#                                    <a href="#"><i class="l-basic-mail"></i> <span class="txt">Email</span></a>#}
+{#                                    <ul class="sub">#}
+{#                                        <li><a href="email-inbox.html"><span class="txt">Inbox</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="email-read.html"><span class="txt">Read email</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="email-write.html"><span class="txt">Write email</span></a>#}
+{#                                        </li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li>#}
+{#                                    <a href="#"><i class="l-basic-geolocalize-01"></i><span class="txt">Maps</span></a>#}
+{#                                    <ul class="sub">#}
+{#                                        <li><a href="maps-google.html"><span class="txt">Google maps</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="maps-vector.html"><span class="txt">Vector maps</span></a>#}
+{#                                        </li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                                <li>#}
+{#                                    <a href="#"><i class="l-basic-webpage"></i><span class="txt">Pages</span></a>#}
+{#                                    <ul class="sub">#}
+{#                                        <li><a href="../registration/login.html"><span class="txt">Login</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="lock-screen.html"><span class="txt">Lock screen</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="../registration/signup.html"><span class="txt">Register</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="lost-password.html"><span class="txt">Lost password</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="profile.html"><span class="txt">User profile</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="calendar.html"><span class="txt">Calendar</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="timeline.html"><span class="txt">Timeline</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="gallery.html"><span class="txt">Gallery</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="invoice.html"><span class="txt">Invoice</span></a>#}
+{#                                        </li>#}
+{#                                        <li><a href="blank.html"><span class="txt">Blank page</span></a>#}
+{#                                        </li>#}
+{#                                        <li>#}
+{#                                            <a href="#"><span class="txt">Error pages</span></a>#}
+{#                                            <ul class="sub">#}
+{#                                                <li><a href="403.html"><span class="txt">403</span></a>#}
+{#                                                </li>#}
+{#                                                <li><a href="404.html"><span class="txt">404</span></a>#}
+{#                                                </li>#}
+{#                                                <li><a href="500.html"><span class="txt">500</span></a>#}
+{#                                                </li>#}
+{#                                            </ul>#}
+{#                                        </li>#}
+{#                                    </ul>#}
+{#                                </li>#}
+{#                            </ul>#}
+{#                        </div>#}
                         <!-- / side-nav -->
                         <!--  .sidebar-panel -->
                         <div class="sidebar-panel">
@@ -667,8 +675,9 @@
                         <!-- Start .page-content-inner -->
                         <div id="page-header" class="clearfix">
                             <div class="page-header">
-                                <h2>Other charts element</h2>
-                                <span class="txt">Sparklines gauges and etc.</span>
+                                <h2>{{ s_name }}</h2>
+{#                                <h2>삼성전자</h2>#}
+                                <span class="txt">{{ s_code }} &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</span>
                             </div>
                             <div class="header-stats">
                                 <div class="spark clearfix">
@@ -687,124 +696,17 @@
                         </div>
                         <!-- Start .row -->
                         <div class="row">
-                            <div class="col-lg-6">
-                                <!-- col-lg-6 start here -->
-                                <div class="panel panel-default plain toggle panelMove panelClose panelRefresh">
-                                    <!-- Start .panel -->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">Easy pie charts</h4>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="pie-charts">
-                                            <div class="easy-pie-chart" data-percent="45">45%</div>
-                                            <div class="label">New Visitors</div>
-                                        </div>
-                                        <div class="pie-charts red-pie">
-                                            <div class="easy-pie-chart-red" data-percent="7">7%</div>
-                                            <div class="label">Drop rate</div>
-                                        </div>
-                                        <div class="pie-charts green-pie">
-                                            <div class="easy-pie-chart-green" data-percent="28">28%</div>
-                                            <div class="label">Returning</div>
-                                        </div>
-                                        <div class="pie-charts blue-pie">
-                                            <div class="easy-pie-chart-blue" data-percent="65">65%</div>
-                                            <div class="label">From Google</div>
-                                        </div>
-                                        <div class="pie-charts yellow-pie">
-                                            <div class="easy-pie-chart-yellow" data-percent="23">23%</div>
-                                            <div class="label">Direct Hits</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End .panel -->
-                                <div class="panel panel-default plain toggle panelMove panelClose panelRefresh">
-                                    <!-- Start .panel -->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">Glow gauge</h4>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="glow-gauge">
-                                            <canvas id="glow-gauge" width="100" height="60"></canvas>
-                                        </div>
-                                        <div class="glow-gauge">
-                                            <canvas id="glow-red-gauge" width="100" height="60"></canvas>
-                                        </div>
-                                        <div class="glow-gauge">
-                                            <canvas id="glow-green-gauge" width="100" height="60"></canvas>
-                                        </div>
-                                        <div class="glow-gauge">
-                                            <canvas id="glow-yellow-gauge" width="100" height="60"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End .panel -->
-                            </div>
-                            <!-- col-lg-6 end here -->
-                            <div class="col-lg-6">
-                                <!-- col-lg-6 start here -->
-                                <div class="panel panel-default plain toggle panelMove panelClose panelRefresh">
-                                    <!-- Start .panel -->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">Sparklines</h4>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <!-- Start .row -->
-                                            <div class="col-md-3 col-md-6 col-sm-12">
-                                                <div id="spark-line" class="sparkline"></div>
-                                            </div>
-                                            <div class="col-md-3 col-md-6 col-sm-12">
-                                                <div id="spark-line-blue" class="sparkline"></div>
-                                            </div>
-                                            <div class="col-md-3 col-md-6 col-sm-12">
-                                                <div id="spark-line-red" class="sparkline"></div>
-                                            </div>
-                                            <div class="col-md-3 col-md-6 col-sm-12">
-                                                <div id="spark-line-green" class="sparkline"></div>
-                                            </div>
-                                        </div>
-                                        <!-- End .row -->
-                                        <div class="page-header">
-                                            <h5>Bar</h5>
-                                        </div>
-                                        <div class="row">
-                                            <!-- Start .row -->
-                                            <div class="col-md-3 col-md-6 col-sm-12">
-                                                <div id="spark-bar" class="sparkline"></div>
-                                            </div>
-                                            <div class="col-md-3 col-md-6 col-sm-12">
-                                                <div id="spark-bar-blue" class="sparkline"></div>
-                                            </div>
-                                            <div class="col-md-3 col-md-6 col-sm-12">
-                                                <div id="spark-bar-red" class="sparkline"></div>
-                                            </div>
-                                            <div class="col-md-3 col-md-6 col-sm-12">
-                                                <div id="spark-bar-green" class="sparkline"></div>
-                                            </div>
-                                        </div>
-                                        <!-- End .row -->
-                                    </div>
-                                </div>
-                                <!-- End .panel -->
-                                <div class="panel panel-default plain toggle panelMove panelClose panelRefresh">
-                                    <!-- Start .panel -->
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">Gauge</h4>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="gauge">
-                                            <canvas id="gauge" width="100" height="60"></canvas>
-                                            <canvas id="gauge-red" width="100" height="60"></canvas>
-                                            <canvas id="gauge-blue" width="100" height="60"></canvas>
-                                            <canvas id="gauge-green" width="100" height="60"></canvas>
-                                            <canvas id="gauge-percent" width="100" height="60"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End .panel -->
-                            </div>
-                            <!-- col-lg-6 end here -->
+
+
+
+
+    {% block content %}
+
+
+    {% endblock %}
+
+
+
                         </div>
                         <!-- End .row -->
                     </div>
@@ -818,7 +720,7 @@
         <div id="footer" class="clearfix sidebar-page right-sidebar-page">
             <!-- Start #footer  -->
             <p class="pull-left">
-                Copyrights &copy; 2014 <a href="http://suggeelson.com/" class="color-blue strong" target="_blank">SuggeElson</a>. All rights reserved.
+                Copyrights &copy; 2015 <a href="http://projectm.co.kr/" class="color-blue strong" target="_blank">Project M</a>. All rights reserved.
             </p>
             <p class="pull-right">
                 <a href="#" class="mr5">Terms of use</a>
@@ -832,45 +734,73 @@
         </div>
         <!-- Javascripts -->
         <!-- Load pace first -->
-        <script src="plugins/core/pace/pace.min.js"></script>
+ <script src="{% static "plugins/core/pace/pace.min.js" %}"></script>
         <!-- Important javascript libs(put in all pages) -->
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script>
-        window.jQuery || document.write('<script src="js/libs/jquery-2.1.1.min.js">\x3C/script>')
+        window.jQuery || document.write('<script src="../../js/libs/jquery-2.1.1.min.js">\x3C/script>')
         </script>
         <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
         <script>
-        window.jQuery || document.write('<script src="js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
+        window.jQuery || document.write('<script src="../../js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
         </script>
         <!--[if lt IE 9]>
-  <script type="text/javascript" src="js/libs/excanvas.min.js"></script>
+  <script type="text/javascript" src="../../js/libs/excanvas.min.js"></script>
   <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <script type="text/javascript" src="js/libs/respond.min.js"></script>
+  <script type="text/javascript" src="../../js/libs/respond.min.js"></script>
 <![endif]-->
         <!-- Bootstrap plugins -->
-        <script src="js/bootstrap/bootstrap.js"></script>
+        <script src="{% static "js/bootstrap/bootstrap.js" %}"></script>
         <!-- Core plugins ( not remove ) -->
-        <script src="js/libs/modernizr.custom.js"></script>
+        <script src="{% static "js/libs/modernizr.custom.js" %}"></script>
         <!-- Handle responsive view functions -->
-        <script src="js/jRespond.min.js"></script>
+        <script src="{% static "js/jRespond.min.js" %}"></script>
         <!-- Custom scroll for sidebars,tables and etc. -->
-        <script src="plugins/core/slimscroll/jquery.slimscroll.min.js"></script>
-        <script src="plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
+        <script src="{% static "plugins/core/slimscroll/jquery.slimscroll.min.js" %}"></script>
+        <script src="{% static "plugins/core/slimscroll/jquery.slimscroll.horizontal.min.js" %}"></script>
         <!-- Remove click delay in touch -->
-        <script src="plugins/core/fastclick/fastclick.js"></script>
+        <script src="{% static "plugins/core/fastclick/fastclick.js" %}"></script>
         <!-- Increase jquery animation speed -->
-        <script src="plugins/core/velocity/jquery.velocity.min.js"></script>
+        <script src="{% static "plugins/core/velocity/jquery.velocity.min.js" %}"></script>
         <!-- Quick search plugin (fast search for many widgets) -->
-        <script src="plugins/core/quicksearch/jquery.quicksearch.js"></script>
+        <script src="{% static "plugins/core/quicksearch/jquery.quicksearch.js" %}"></script>
         <!-- Bootbox fast bootstrap modals -->
-        <script src="plugins/ui/bootbox/bootbox.js"></script>
+        <script src="{% static "plugins/ui/bootbox/bootbox.js" %}"></script>
         <!-- Other plugins ( load only nessesary plugins for every page) -->
-        <script src="plugins/charts/sparklines/jquery.sparkline.js"></script>
-        <script src="plugins/charts/pie-chart/jquery.easy-pie-chart.js"></script>
-        <script src="plugins/charts/canvas-gauge/gauge.js"></script>
-        <script src="plugins/charts/gauge/gauge.js"></script>
-        <script src="js/jquery.dynamic.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/pages/charts-other.js"></script>
+        <script src="{% static "js/libs/date.js" %}"></script>
+        <script src="{% static "plugins/charts/flot/jquery.flot.custom.js" %}"></script>
+        <script src="{% static "plugins/charts/flot/jquery.flot.pie.js" %}"></script>
+        <script src="{% static "plugins/charts/flot/jquery.flot.resize.js" %}"></script>
+        <script src="{% static "plugins/charts/flot/jquery.flot.time.js" %}"></script>
+        <script src="{% static "plugins/charts/flot/jquery.flot.growraf.js" %}"></script>
+        <script src="{% static "plugins/charts/flot/jquery.flot.categories.js" %}"></script>
+        <script src="{% static "plugins/charts/flot/jquery.flot.stack.js" %}"></script>
+        <script src="{% static "plugins/charts/flot/jquery.flot.orderBars.js" %}"></script>
+        <script src="{% static "plugins/charts/flot/jquery.flot.tooltip.min.js" %}"></script>
+        <script src="{% static "plugins/charts/flot/jquery.flot.curvedLines.js" %}"></script>
+        <script src="{% static "plugins/charts/sparklines/jquery.sparkline.js" %}"></script>
+        <script src="{% static "plugins/charts/progressbars/progressbar.js" %}"></script>
+        <script src="{% static "plugins/ui/waypoint/waypoints.js" %}"></script>
+        <script src="{% static "plugins/ui/weather/skyicons.js" %}"></script>
+        <script src="{% static "plugins/ui/notify/jquery.gritter.js" %}"></script>
+        <script src="{% static "plugins/misc/vectormaps/jquery-jvectormap-1.2.2.min.js" %}"></script>
+        <script src="{% static "plugins/misc/vectormaps/maps/jquery-jvectormap-world-mill-en.js" %}"></script>
+        <script src="{% static "plugins/misc/countTo/jquery.countTo.js" %}"></script>
+        <script src="{% static "js/jquery.dynamic.js" %}"></script>
+        <script src="{% static "js/main.js" %}"></script>
+        <script src="{% static "js/pages/dashboard.js" %}"></script>
+
+
+
+        <!-- Other plugins ( load only nessesary plugins for every page) -->
+        <script src="{% static "plugins/forms/bootstrap-filestyle/bootstrap-filestyle.js" %}"></script>
+        <script src="{% static "forms/autosize/jquery.autosize.js" %}"></script>
+        <script src="{% static "plugins/forms/maxlength/bootstrap-maxlength.js" %}"></script>
+        <script src="{% static "plugins/forms/checkall/jquery.checkAll.js" %}"></script>
+        <script src="{% static "plugins/charts/sparklines/jquery.sparkline.js" %}"></script>
+        <script src="{% static "js/jquery.dynamic.js" %}"></script>
+        <script src="{% static "js/main.js" %}"></script>
+        <script src="{% static "js/pages/forms-basic.js" %}"></script>
+
     </body>
 </html>

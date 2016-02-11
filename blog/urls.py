@@ -8,7 +8,6 @@ urlpatterns = patterns('blog.views',
     url(r'^new/$', 'post_create', name='post_create'),
 
     url(r'^test/$', 'test', name='post_test'),
-    url(r'^chart/$', 'chart', name='chart'),
     url(r'^(?P<pk>\d+)/edit/$', 'post_update', name='post_update'),
 
     url(r'^(?P<pk>\d+)/delete/$', 'post_delete', name='post_delete'),

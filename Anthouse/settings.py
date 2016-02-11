@@ -41,6 +41,9 @@ INSTALLED_APPS = (
     'Antmain',
     'blog',
     'sdata',
+    'ajax_select',
+    'chart',
+    'mylist',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -129,3 +132,4 @@ TEMPLATE_DIRS = (
 
 LOGIN_REDIRECT_URL = '/'
 
+# AUTH_USER_MODEL = 'accounts.models.MyUser'

@@ -7,6 +7,7 @@ urlpatterns = [
     url(r'^signup/$', 'accounts.views.signup', name='signup'),
     url(r'^signup_ok/$', TemplateView.as_view(template_name='registration/signup_ok.html'), name='signup_ok'),
     url(r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}, name='logout_url'),
+    # url(r'^profile/$', 'profile_edit',  name='profile_edit'),
 
 ]
 

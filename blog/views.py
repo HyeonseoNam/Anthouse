@@ -22,9 +22,6 @@ def test(request):
         'form':form,
     })
 
-def chart(request):
-    return render(request, 'blog/chart.html', {
-    })
 
 
 class PostListView(ListView):

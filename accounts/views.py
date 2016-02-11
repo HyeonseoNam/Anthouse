@@ -28,3 +28,27 @@ def signup(request):
     return render(request, "registration/signup.html", {
          "signupform": signupform,
     })
+
+
+
+# class PostCreateView(CreateView):
+#     model=Post
+#     form_class = PostForm
+#     template_name = 'blog/post_forms.html'
+#
+#     # success_url = reverse_lazy('blog:post_detail')         포스트 성공시 리다이렉트 아레 get_success_url로 대체가능
+#
+#     def form_valid(self,form):
+#         post = form.save(commit=False)
+#         post.author = self.request.user
+#         post.save()
+#         return super(PostCreateView,self).form_valid(form)
+#
+#     def get_success_url(self):
+#         # redirect('blog:post_detail', self.object.pk)   #HttpResponseRedirect
+#         # reverse('blog:post_detail', args=[self.object.pk], kwargs={})    #string
+#
+#
+#         return reverse('blog:post_detail', args=[self.object.pk])
+#
+# post_create = login_required(PostCreateView.as_view())

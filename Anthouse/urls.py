@@ -22,9 +22,11 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'',include('Antmain.urls')),
+    url(r'',include('Antmain.urls',namespace='antmain')),
     #     {% url "antmain:login_url" post_pk %}
     url(r'blog/',include('blog.urls', namespace='blog')),
+    url(r'chart/',include('chart.urls',namespace='chart')),
+    url(r'mylist/',include('mylist.urls',namespace='mylist')),
     url(r'sdata/',include('sdata.urls',namespace='sdata')),
     url(r'accounts/', include('accounts.urls')),
     url(r'accounts/', include('django.contrib.auth.urls')),

@@ -48,7 +48,7 @@
         <!-- .page-navbar -->
         <div id="header" class="page-navbar">
             <!-- .navbar-brand -->
-            <a href="index.html" class="navbar-brand hidden-xs hidden-sm">
+            <a href="{% url "antmain:antmain" %}" class="navbar-brand hidden-xs hidden-sm">
                 <img src="{% static "img/logo.png" %}" class="logo hidden-xs" alt="Dynamic logo">
                 <img src="{% static "img/logosm.png" %}" class="logo-sm hidden-lg hidden-md" alt="Dynamic logo">
             </a>
@@ -67,7 +67,7 @@
                     </li>
                     <li>
 {#                        <a href="#" class="reset-layout tipB" title="Reset panel position for this page"><i class="fa fa-history"></i></a>#}
-                        <form class="navbar-form pull-left" method="post"  action="{% url 'search_name' %}" role="form">
+                        <form class="navbar-form pull-left" method="post"  action="{% url 'antmain:search_name' %}" role="form">
                             {% csrf_token %}
                             <input type="text" class="form-control" name="title" id="title" value="" placeholder="종목 검색">
                             <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
@@ -189,7 +189,7 @@
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">settings <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu right" role="menu">
-                                    <li><a href="profile.html"><i class="fa fa-edit"></i>Edit profile</a>
+                                    <li><a href="../../../accounts/templates/accounts/profile.html"><i class="fa fa-edit"></i>Edit profile</a>
                                     </li>
                                     <li><a href="#"><i class="fa fa-money"></i>Windraws</a>
                                     </li>
@@ -213,16 +213,17 @@
                        <!-- .side-nav -->
                         <div class="side-nav">
                             <ul class="nav">
-                                <li><a href="index.html"><i class="l-basic-laptop"></i><span class="txt">Dashboard</span></a>
-                                </li>
-                                <li><a href="http://themes.suggelab.com/#dynamic_frontend" target="_blank"><i class="l-basic-webpage"></i><span class="txt">Frontend</span><span class="label">hot</span></a>
+                                <li><a href="{% url "antmain:antmain" %}"><i class="l-basic-home"></i><span class="txt">메인</span></a>
                                 </li>
                                 <li>
-                                    <a href="{% url "blog:chart" %}"><i class="l-ecommerce-graph3"></i> <span class="txt">차트</span></a>
+                                    <a href="{% url "chart:chart" %}"><i class="l-ecommerce-graph3"></i> <span class="txt">차트</span></a>
                                 </li>
+                                <li><a href="{% url "mylist:mylist" %}"><i class="l-basic-book-pencil"></i><span class="txt">종목관리</span></a>
+                                </li>
+{#                                <li><a href="http://themes.suggelab.com/#dynamic_frontend" target="_blank"><i class="l-basic-webpage"></i><span class="txt">종목관리</span><span class="label">hot</span></a>#}
+{#                                </li>#}
                                 <li>
                                     <a href="{% url "blog:post_test" %}"><i class="l-basic-webpage-txt"></i><span class="txt">종목토론</span></a>
-
                                 </li>
 {#                                <li>#}
 {#                                    <a href="#"><i class="l-software-layout-header-3columns"></i><span class="txt">Tables</span></a>#}
@@ -719,7 +720,7 @@
         <div id="footer" class="clearfix sidebar-page right-sidebar-page">
             <!-- Start #footer  -->
             <p class="pull-left">
-                Copyrights &copy; 2015 <a href="http://projetm.co.kr/" class="color-blue strong" target="_blank">Project M</a>. All rights reserved.
+                Copyrights &copy; 2015 <a href="http://projectm.co.kr/" class="color-blue strong" target="_blank">Project M</a>. All rights reserved.
             </p>
             <p class="pull-right">
                 <a href="#" class="mr5">Terms of use</a>
