@@ -27,7 +27,6 @@ def test(request):
 class PostListView(ListView):
     model = Post
     template_name = 'blog/index.html'
-index = PostListView.as_view()
 
 #
 #
@@ -91,7 +90,7 @@ class PostCreateView(CreateView):
 
         return reverse('blog:post_detail', args=[self.object.pk])
 
-post_create = login_required(PostCreateView.as_view())
+# post_create = login_required(PostCreateView.as_view())
 
 #
 # @login_required
@@ -122,7 +121,7 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
     def get_success_url(self):
         return reverse('blog:post_detail', args=[self.object.pk])
 
-post_update = PostUpdateView.as_view()
+
 
 # @login_required
 # def post_delete(request, pk):

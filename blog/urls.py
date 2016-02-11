@@ -1,14 +1,16 @@
 from django.conf.urls import url, patterns
-
+from django.contrib.auth.decorators import login_required
+from blog.views import PostListView, PostCreateView, PostUpdateView
 
 
 urlpatterns = patterns('blog.views',
-    url(r'^$', 'index', name='index'),
+    # url(r'^$', 'index', name='index'),
+    url(r'^$', PostListView.as_view(), name='index'),
     url(r'^(?P<pk>\d+)/$', 'post_detail', name='post_detail'),
-    url(r'^new/$', 'post_create', name='post_create'),
+    url(r'^new/$', login_required(PostCreateView.as_view()), name='post_create'),
 
     url(r'^test/$', 'test', name='post_test'),
-    url(r'^(?P<pk>\d+)/edit/$', 'post_update', name='post_update'),
+    url(r'^(?P<pk>\d+)/edit/$', PostUpdateView.as_view(), name='post_update'),
 
     url(r'^(?P<pk>\d+)/delete/$', 'post_delete', name='post_delete'),
 
