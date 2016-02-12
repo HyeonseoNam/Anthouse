@@ -41,7 +41,7 @@ INSTALLED_APPS = (
     'Antmain',
     'blog',
     'sdata',
-    'ajax_select',
+    # 'ajax_select',
     'chart',
     'mylist',
 )
