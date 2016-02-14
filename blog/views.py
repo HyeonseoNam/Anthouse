@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Post, Comment
+from .models import Post, Comment, Timeline
 from .forms import CommentForm, PostForm, TimelineForm
 from django.contrib.auth.decorators import login_required
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -8,24 +8,44 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from sdata.models import Stock2, Stock_current
 
 
-def test(request):
-    post_list = Post.objects.all().order_by('-created_at')
+def timeline(request):
+    timeline_list = Timeline.objects.all().order_by('-created_at')
     if request.method == 'POST':
         form = TimelineForm(request.POST, request.FILES)
         if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.save()
+            timeline = form.save(commit=False)
+            timeline.author = request.user
+            timeline.save()
             # return redirect('blog:post_detail', post.pk)
     else:
         form = TimelineForm()
     return render(request, 'blog/test.html', {
-        'post_list': post_list,
+        'timeline_list': timeline_list,
         'form':form,
     })
 
+# class TimelineDetailView(DetailView):
+#     model = Timeline
+#     template_name = 'blog/test.html'
+#
+#     def post(self,request):
+#         form = TimelineForm(request.POST, request.FILES)
+#         if form.is_valid():
+#             timeline = form.save(commit=False)
+#             timeline.author = self.request.user
+#             timeline.save()
+#         return render(request, 'blog/test.html', {
+#             'timeline_list': timeline,
+#             'form':form,
+#         })
 
-
+    # def get(self, request):
+    # def get_success_url(self):
+    #     # redirect('blog:post_detail', self.object.pk)   #HttpResponseRedirect
+    #     # reverse('blog:post_detail', args=[self.object.pk], kwargs={})    #string
+    #
+    #
+    #     return reverse('blog:test', args=[self.object.pk])
 
 # def search_name(request):
 #     # if request.method =="GET":
@@ -39,24 +59,19 @@ def test(request):
 #         's2' : s2,})
 
 
-# class StockListView(ListView):
-#     model =  Stock_current
-#     template_name = 'blog/test.html'
-#     context_object_name = 'stock_list'
-#
-#
 class StockDetailView(DetailView):
     model =  Stock_current
     template_name = 'blog/test.html'
     context_object_name = 's2'
 
+
     def get(self, request):
         s2 = Stock_current.objects.get(hname=request.GET['title'])
+        timeline_list = Timeline.objects.all().order_by('-created_at')
 
         return render(request, "blog/test.html", {
-        's2' : s2,})
-
-
+        's2' : s2,
+        'timeline_list': timeline_list})
 
 
 
@@ -113,6 +128,22 @@ class PostDetailView(DetailView):
 #     })
 
 
+# class TimelineCreateView(CreateView):
+#     model = Timeline
+#     form_class = CommentForm
+#     template_name = 'blog/post_forms.html'
+#
+#     def form_valid(self,form):
+#         comment = form.save(commit=False)
+#         comment.author = self.request.user
+#         comment.save()
+#         return super(CommentNewView,self).form_valid(form)
+#
+#     def get_success_url(self):
+#         # redirect('blog:post_detail', self.object.pk)   #HttpResponseRedirect
+#         # reverse('blog:post_detail', args=[self.object.pk], kwargs={})    #string
+#
+#         return reverse('blog:post_detail', args=[self.object.pk])
 
 class PostCreateView(CreateView):
     model=Post

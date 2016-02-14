@@ -185,8 +185,19 @@
                         </div>
                         <!-- / .sidebar-panel -->
                         <div class="user-info clearfix">
-                            <img src="{% static "img/avatars/128.jpg" %}" alt="avatar">
-                            <span class="name">SuggeElson</span>
+                            {% if user.is_authenticated %}
+                            <img src="{% static 'img/avatars/128.jpg' %}" alt="avatar">
+                            <span class="name">{{ user.username }}</span>
+                            {% else %}
+                            <img src="{% static 'img/avatars/128.jpg' %}" alt="avatar">
+                            <span class="name"> Guest</span>
+                            {%  endif %}
+
+
+
+
+
+
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default btn-xs"><i class="l-basic-gear"></i>
                                 </button>
@@ -227,7 +238,7 @@
 {#                                <li><a href="http://themes.suggelab.com/#dynamic_frontend" target="_blank"><i class="l-basic-webpage"></i><span class="txt">종목관리</span><span class="label">hot</span></a>#}
 {#                                </li>#}
                                 <li>
-                                    <a href="{% url "blog:post_test" %}"><i class="l-basic-webpage-txt"></i><span class="txt">종목토론</span></a>
+                                    <a href="{% url "blog:timeline" %}"><i class="l-basic-webpage-txt"></i><span class="txt">종목토론</span></a>
                                 </li>
 {#                                <li>#}
 {#                                    <a href="#"><i class="l-software-layout-header-3columns"></i><span class="txt">Tables</span></a>#}

@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.db import models
 from django.contrib.auth.models import User
+from sdata.models import Stock_current
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL)
@@ -15,13 +16,14 @@ class Post(models.Model):
 
 class Timeline(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL)
+    # stock = models.ForeignKey(Stock_current)
     content = models.TextField()
     photo = models.ImageField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return self.author
+    # def __str__(self):
+    #     return self.author
 
 
 class Comment(models.Model):

@@ -10,7 +10,7 @@ class PostForm(forms.ModelForm):
 
 class TimelineForm(forms.ModelForm):
     class Meta:
-        model = Post
+        model = Timeline
         fields = ('content','photo')
 
 class CommentForm(forms.ModelForm):

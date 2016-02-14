@@ -14,7 +14,8 @@ urlpatterns = patterns('blog.views',
     url(r'^search/$', StockDetailView.as_view(), name='search_name'),
 
 
-    url(r'^test/$', 'test', name='post_test'),
+    url(r'^timeline/$', 'timeline', name='timeline'),
+    # url(r'^test/$', TimelineDetailView.as_view() , name='post_test'),
 
     url(r'^new/$', login_required(PostCreateView.as_view()), name='post_create'),
     url(r'^(?P<pk>\d+)/edit/$', PostUpdateView.as_view(), name='post_update'),
