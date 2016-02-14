@@ -37,10 +37,11 @@ class Stock_current(models.Model):
     low52w = models.CharField(max_length=8)
     low52wdate = models.CharField(max_length=8)
     exhratio = models.CharField(max_length=7)
-    flmtvol = models.CharField(max_length=12)
     per = models.CharField(max_length=7)
+    pbrx = models.CharField(max_length=7)
     listing = models.CharField(max_length=12)
     jkrate = models.CharField(max_length=8)
+    memedan = models.CharField(max_length=5, blank=True)
     vol = models.CharField(max_length=7)
     shcode = models.CharField(max_length=8, primary_key=True)
     valuep = models.CharField(max_length=12)
@@ -48,12 +49,7 @@ class Stock_current(models.Model):
     highyeardate = models.CharField(max_length=8)
     lowyear = models.CharField(max_length=8)
     lowyeardate = models.CharField(max_length=8)
-    upname = models.CharField(max_length=20)
-    upcode = models.CharField(max_length=3)
-    upprice = models.CharField(max_length=8)
-    upsign = models.CharField(max_length=1)
-    upchange = models.CharField(max_length=7)
-    updiff = models.CharField(max_length=7)
+
 
     def __str__(self):
         return self.hname

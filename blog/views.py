@@ -27,17 +27,37 @@ def test(request):
 
 
 
-def search_name(request):
-    # if request.method =="GET":
-    #         searchform = SearchNameForm()
-    # sdata= Stock.objects.get()
-    s = Stock2.objects.get(s_name=request.POST['title'])
-    s2 = Stock_current.objects.get(hname=request.POST['title'])
-    return render(request, "blog/test.html", {
-         # "searchform": searchform,
-        's_name' : request.POST['title'],
-        's_code' : s.s_code,
+# def search_name(request):
+#     # if request.method =="GET":
+#         # s = Stock2.objects.get(s_name=request.GET['title'])
+#     s2 = Stock_current.objects.get(hname=request.POST.get('title'))
+#
+#     return render(request, "blog/test.html", {
+#          # "searchform": searchform,
+#         # 's_name' : s.s_name,
+#         # 's_code' : s.s_code,
+#         's2' : s2,})
+
+
+# class StockListView(ListView):
+#     model =  Stock_current
+#     template_name = 'blog/test.html'
+#     context_object_name = 'stock_list'
+#
+#
+class StockDetailView(DetailView):
+    model =  Stock_current
+    template_name = 'blog/test.html'
+    context_object_name = 's2'
+
+    def get(self, request):
+        s2 = Stock_current.objects.get(hname=request.GET['title'])
+
+        return render(request, "blog/test.html", {
         's2' : s2,})
+
+
+
 
 
 

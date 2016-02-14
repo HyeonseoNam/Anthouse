@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.db import models
-
+from django.contrib.auth.models import User
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL)
@@ -33,3 +33,12 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.author
+
+class Message(models.Model):
+    user = models.ForeignKey(User)
+    message = models.CharField(max_length=128)
+    created = models.DateTimeField(auto_now_add=True)
+
+class Like(models.Model):
+    user = models.ForeignKey(User)
+    message = models.ForeignKey('Message')

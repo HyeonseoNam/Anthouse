@@ -1,7 +1,6 @@
 from django.conf.urls import url, patterns
 from django.contrib.auth.decorators import login_required
-from blog.views import PostListView, PostCreateView, PostUpdateView, PostDeleteView,PostDetailView , CommentNewView
-
+from blog.views import PostListView, PostCreateView, PostUpdateView, PostDeleteView,PostDetailView , CommentNewView, StockDetailView
 
 urlpatterns = patterns('blog.views',
     # url(r'^$', 'index', name='index'),
@@ -9,7 +8,10 @@ urlpatterns = patterns('blog.views',
     # url(r'^(?P<pk>\d+)/$', 'post_detail', name='post_detail'),
     url(r'^(?P<pk>\d+)/$', PostDetailView.as_view(), name='post_detail'),
 
-    url(r'^search/$', 'search_name', name='search_name'),
+    # url(r'^search/$', 'search_name', name='search_name'),
+    # url(r'^$', StockListView.as_view(), name='stock_list'),
+
+    url(r'^search/$', StockDetailView.as_view(), name='search_name'),
 
 
     url(r'^test/$', 'test', name='post_test'),

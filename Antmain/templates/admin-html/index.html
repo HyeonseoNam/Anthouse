@@ -54,6 +54,7 @@
             </a>
             <!-- / navbar-brand -->
             <!-- .no-collapse -->
+
             <div id="navbar-no-collapse" class="navbar-no-collapse">
                 <!-- top left nav -->
                 <ul class="nav navbar-nav">
@@ -63,15 +64,19 @@
                             <span class="sr-only">Collapse sidebar</span>
                         </a>
                     </li>
+
                     <li>
-                        <form class="navbar-form pull-left" method="post"  action="{% url 'blog:search_name' %}" role="form">
+{#                        <a href="#" class="reset-layout tipB" title="Reset panel position for this page"><i class="fa fa-history"></i></a>#}
+
+                            <form class="navbar-form pull-left" method="post"  action="{% url "blog:search_name" %}"  role="form">
                             {% csrf_token %}
                             <input type="text" class="form-control" name="title" id="title" value="" placeholder="종목 검색">
                             <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                         </form>
                     </li>
+
                 </ul>
-                <!-- / top left nav -->
+            <!-- / top left nav -->
                 <!-- top right nav -->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
