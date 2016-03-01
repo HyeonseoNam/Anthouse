@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from .models import Post, Comment, Timeline
 from .forms import CommentForm, PostForm, TimelineForm
@@ -60,7 +61,7 @@ def timeline(request):
 
 
 class StockDetailView(DetailView):
-    model =  Stock_current
+    model = Stock_current
     template_name = 'blog/test.html'
     context_object_name = 's2'
 
@@ -73,6 +74,24 @@ class StockDetailView(DetailView):
         's2' : s2,
         'timeline_list': timeline_list})
 
+
+
+
+
+class StockDetailView2(DetailView):
+    model = Stock_current
+    template_name = 'blog/test2.html'
+    context_object_name = 's3'
+
+
+
+    # def get(self, request):
+    #     s2 = Stock_current.objects.get(hname=request.GET['title'])
+    #     timeline_list = Timeline.objects.all().order_by('-created_at')
+    #
+    #     return render(request, "blog/test.html", {
+    #     's2' : s2,
+    #     'timeline_list': timeline_list})
 
 
 
