@@ -9,89 +9,102 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from sdata.models import Stock2, Stock_current
 
 
-def timeline(request):
-    timeline_list = Timeline.objects.all().order_by('-created_at')
-    if request.method == 'POST':
-        form = TimelineForm(request.POST, request.FILES)
-        if form.is_valid():
-            timeline = form.save(commit=False)
-            timeline.author = request.user
-            timeline.save()
-            # return redirect('blog:post_detail', post.pk)
-    else:
-        form = TimelineForm()
-    return render(request, 'blog/test.html', {
-        'timeline_list': timeline_list,
-        'form':form,
-    })
-
-# class TimelineDetailView(DetailView):
-#     model = Timeline
-#     template_name = 'blog/test.html'
-#
-#     def post(self,request):
+# def timeline(request):
+#     timeline_list = Timeline.objects.all().order_by('-created_at')
+#     if request.method == 'POST':
 #         form = TimelineForm(request.POST, request.FILES)
+#         # shcode = request.POST.get('shcode')
+#         shcode = '099220'
+#         stock = Stock_current.objects.get(shcode=shcode)
 #         if form.is_valid():
 #             timeline = form.save(commit=False)
-#             timeline.author = self.request.user
+#             timeline.author = request.user
+#             timeline.stock = stock
 #             timeline.save()
-#         return render(request, 'blog/test.html', {
-#             'timeline_list': timeline,
-#             'form':form,
-#         })
-
-    # def get(self, request):
-    # def get_success_url(self):
-    #     # redirect('blog:post_detail', self.object.pk)   #HttpResponseRedirect
-    #     # reverse('blog:post_detail', args=[self.object.pk], kwargs={})    #string
-    #
-    #
-    #     return reverse('blog:test', args=[self.object.pk])
-
-# def search_name(request):
-#     # if request.method =="GET":
-#         # s = Stock2.objects.get(s_name=request.GET['title'])
-#     s2 = Stock_current.objects.get(hname=request.POST.get('title'))
-#
-#     return render(request, "blog/test.html", {
-#          # "searchform": searchform,
-#         # 's_name' : s.s_name,
-#         # 's_code' : s.s_code,
-#         's2' : s2,})
+#             # return redirect('blog:post_detail', post.pk)
+#     else:
+#         form = TimelineForm()
+#     return render(request, 'blog/stock_detail.html', {
+#         'timeline_list': timeline_list,
+#         'form':form,
+#     })
 
 
+# 전체에서 글 작성기능은 기능은 안됨 , 임시구현
+class StockListView(DetailView):
+    model = Stock_current
+    template_name = 'blog/stock_detail.html'
+    context_object_name = 's2'
+
+    def get(self, request):
+        timeline_list = Timeline.objects.all().order_by('-created_at')
+
+        context = {
+            # 's2': s2,
+            # 'search_value': search_value,
+            'timeline_list': timeline_list
+        }
+
+        return render(request, "blog/stock_detail.html", context)
+
+
+# 종목 검색했을때 해당 페이지
 class StockDetailView(DetailView):
     model = Stock_current
-    template_name = 'blog/test.html'
+    template_name = 'blog/stock_detail.html'
     context_object_name = 's2'
 
 
     def get(self, request):
-        s2 = Stock_current.objects.get(hname=request.GET['title'])
-        timeline_list = Timeline.objects.all().order_by('-created_at')
+        # s2 = Stock_current.objects.get(hname=request.GET.get('title'))
+        search = request.GET.get('search')
 
-        return render(request, "blog/test.html", {
-        's2' : s2,
-        'timeline_list': timeline_list})
+        try:
+            int(search)
+            search_value = search
+            s2 = Stock_current.objects.get(shcode=search_value)
+        except:
+            # 숫자가 아닐때 shcode 가 정의가 되지 않아서 에러가 남.
+            str(search)
+            search_value = search
+            s2 = Stock_current.objects.get(hname=search_value)
+
+        timeline_list = Timeline.objects.filter(stock=s2).order_by('-created_at')
+
+        context = {
+            's2': s2,
+            'search_value': search_value,
+            'timeline_list': timeline_list
+        }
+
+        return render(request, "blog/stock_detail.html", context)
+
+    def post(self,request):
+        form = TimelineForm(request.POST, request.FILES)
+        search_value = request.POST.get('search_value')
+
+        try:
+            int(search_value)
+            s2 = Stock_current.objects.get(shcode=search_value)
+        except:
+            str(search_value)
+            s2 = Stock_current.objects.get(hname=search_value)
+
+        if form.is_valid():
+            timeline = form.save(commit=False)
+            timeline.author = request.user
+            timeline.stock = s2
+            timeline.save()
+
+        timeline_list = Timeline.objects.filter(stock=s2).order_by('-created_at')
 
 
+        return render(request, 'blog/stock_detail.html', {
+            's2': s2,
+            'timeline_list': timeline_list,
+            'form':form,
+        })
 
-
-
-class StockDetailView2(DetailView):
-    model = Stock_current
-    template_name = 'blog/test2.html'
-    context_object_name = 's3'
-
-
-
-    # def get(self, request):
-    #     s2 = Stock_current.objects.get(hname=request.GET['title'])
-    #     timeline_list = Timeline.objects.all().order_by('-created_at')
-    #
-    #     return render(request, "blog/test.html", {
-    #     's2' : s2,
-    #     'timeline_list': timeline_list})
 
 
 

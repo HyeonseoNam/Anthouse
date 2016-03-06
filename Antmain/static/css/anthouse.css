@@ -1,0 +1,20 @@
+.buttonWrap {
+    position:relative;
+    float:left;
+    overflow:hidden;
+    cursor:pointer;
+    background-image:url('../img/etc/camera.gif');
+    width:30px;
+    height:30px;
+    margin-top:0.8%;
+}
+.buttonWrap input {
+    position:absolute;
+    margin-left:-10px;
+    filter:alpha(opacity=0);
+    opacity:0;
+    -moz-opacity:0;
+    cursor:pointer;
+    width:74px;
+    height:20px;
+}

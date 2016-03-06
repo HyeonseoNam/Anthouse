@@ -1827,7 +1827,7 @@ body.fixed-right-sidebar:not(.fixed-header) #right-sidebar.rstop {
   float: left;
   margin-top : 12px;
   margin-left : 10px;
-  border : 1px solid darkgray ;
+  border : 1.5px solid darkgray ;
   padding : 1px;
   border-radius: 2px;
   /*padding: 15px;*/

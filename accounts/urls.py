@@ -11,7 +11,7 @@ urlpatterns = [
     url(r'^signup/$', 'accounts.views.signup', name='signup'),
     url(r'^signup_ok/$', TemplateView.as_view(template_name='registration/signup_ok.html'), name='signup_ok'),
     url(r'^(?P<method>update/)$', TemplateView.as_view(template_name='accounts/profile')),
-    url(r'^(?P<method>profile/)$', TemplateView.as_view(template_name='accounts/profile_update.html')),
+    url(r'^profile/$', TemplateView.as_view(template_name='accounts/profile_update.html'), name="edit_profile"),
 
 ]
 

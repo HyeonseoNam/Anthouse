@@ -29,12 +29,14 @@
         <link href="../../static/css/main.css" rel="stylesheet" />
         <!-- Custom stylesheets ( Put your own changes here ) -->
         <link href="../../static/css/custom.css" rel="stylesheet" />
+        {#        앤트하우스 커스터마이즈 css#}
+        <link href="{% static "css/anthouse.css" %}" rel="stylesheet" />
         <!-- Fav and touch icons -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../static/img/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../static/img/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../static/img/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="../../static/img/ico/apple-touch-icon-57-precomposed.png">
-        <link rel="icon" href="../../static/img/ico/favicon.ico" type="../../image/png">
+        <link rel="icon" href="../../static/img/ico/favicon2.ico" type="../../image/png">
         <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
         <meta name="msapplication-TileColor" content="#3399cc" />
 
@@ -49,8 +51,8 @@
         <div id="header" class="page-navbar">
             <!-- .navbar-brand -->
             <a href="{% url "antmain:antmain" %}" class="navbar-brand hidden-xs hidden-sm">
-                <img src="{% static "img/logo.png" %}" class="logo hidden-xs" alt="Dynamic logo">
-                <img src="{% static "img/logosm.png" %}" class="logo-sm hidden-lg hidden-md" alt="Dynamic logo">
+                <img src="{% static "img/logo3.png" %}" class="logo hidden-xs" alt="Dynamic logo">
+                <img src="{% static "img/logosm2.png" %}" class="logo-sm hidden-lg hidden-md" alt="Dynamic logo">
             </a>
             <!-- / navbar-brand -->
             <!-- .no-collapse -->
@@ -72,7 +74,7 @@
                         <form class="navbar-form pull-left" method="get"   action="{% url "blog:search_name" %}"  role="form">
 
                             {% csrf_token %}
-                            <input type="text" class="form-control" name="title" id="title" value="" placeholder="종목 검색">
+                            <input type="text" class="form-control" name="search" id="title" value="" placeholder="종목 검색">
                             <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                         </form>
 {#                        {% endfor %}#}
@@ -204,7 +206,8 @@
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">settings <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu right" role="menu">
-                                    <li><a href="../../../accounts/templates/accounts/profile.html"><i class="fa fa-edit"></i>Edit profile</a>
+{#                                    <li><a href="../../../accounts/templates/accounts/profile.html"><i class="fa fa-edit"></i>Edit profile</a>#}
+                                    <li><a href="{% url "edit_profile" %}"><i class="fa fa-edit"></i>Edit profile</a>
                                     </li>
                                     <li><a href="#"><i class="fa fa-money"></i>Windraws</a>
                                     </li>
@@ -687,8 +690,12 @@
                 <!-- .page-content-wrapper -->
                 <div class="page-content-wrapper">
                     <div class="page-content-inner">
+
+
+                        {% block content %}
+
                         <!-- Start .page-content-inner -->
-                        <div id="page-header" class="clearfix">
+{#                        <div id="page-header" class="clearfix">#}
 {#                            <div class="page-header ">#}
 {#                                <h2>{{ s_name }}</h2><span>{{ s_code }}&nbsp;&nbsp;&nbsp;코스피</span>#}
 {#                                <br>#}
@@ -698,61 +705,61 @@
 {##}
 {##}
 {#                            </div>#}
-
-                            <div class="header-stats2">
-                                <div class="spark clearfix">
-                                    <span class="stock-name">{{ s2.hname }}</span><span class="stock-code">{{ s2.shcode }}</span>&nbsp;&nbsp;&nbsp;<span class="stock-codename">코스피</span>
-                                </div>
-                            </div>
-
-
-
-                            <div class="header-stats">
-                                <div class="spark clearfix">
-                                    <div class="spark-info">전일&nbsp;&nbsp;<span class="number">{{ s2.recprice }}</span></div>
+{##}
+{#                            <div class="header-stats2">#}
+{#                                <div class="spark clearfix">#}
+{#                                    <span class="stock-name">{{ s2.hname }}</span><span class="stock-code">{{ s2.shcode }}</span>&nbsp;&nbsp;&nbsp;<span class="stock-codename">코스피</span>#}
+{#                                </div>#}
+{#                            </div>#}
+{##}
+{##}
+{##}
+{#                            <div class="header-stats">#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info">전일&nbsp;&nbsp;<span class="number">{{ s2.recprice }}</span></div>#}
 {#                                    <div id="spark-visitors" class="sparkline"></div>#}
-                                </div>
-                                <div class="spark clearfix">
-                                    <div class="spark-info">고가&nbsp;&nbsp;<span class="number-up">{{ s2.high }}</span></div>
-                                </div>
-                                <div class="spark clearfix">
-                                    <div class="spark-info">상한가&nbsp;&nbsp;<span class="number-up">{{ s2.uplmtprice }}</span></div>
-                                </div>
-                                <div class="spark clearfix">
-                                    <div class="spark-info">거래량&nbsp;&nbsp;<span class="number">{{ s2.volume }}</span></div>
-                                </div><hr>
-                                <div class="spark clearfix">
-                                    <div class="spark-info">시가&nbsp;&nbsp;<span class="number">{{ s2.openp }}</span></div>
-                                </div>
-                                <div class="spark clearfix">
-                                    <div class="spark-info">저가&nbsp;&nbsp;<span class="number-down">{{ s2.dnlmtprice }}</span></div>
-                                </div>
-                                <div class="spark clearfix">
-                                    <div class="spark-info">하한가&nbsp;&nbsp;<span class="number-down">{{ s2.high }}</span></div>
-                                </div>
-                                <div class="spark clearfix">
-                                    <div class="spark-info">거래대금&nbsp;&nbsp;<span class="number">{{ s2.valuep }}</span>백만</div>
-                                </div>
-
-
-
-                            </div>
-
-                        </div>
+{#                                </div>#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info">고가&nbsp;&nbsp;<span class="number-up">{{ s2.high }}</span></div>#}
+{#                                </div>#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info">상한가&nbsp;&nbsp;<span class="number-up">{{ s2.uplmtprice }}</span></div>#}
+{#                                </div>#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info">거래량&nbsp;&nbsp;<span class="number">{{ s2.volume }}</span></div>#}
+{#                                </div><hr>#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info">시가&nbsp;&nbsp;<span class="number">{{ s2.openp }}</span></div>#}
+{#                                </div>#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info">저가&nbsp;&nbsp;<span class="number-down">{{ s2.dnlmtprice }}</span></div>#}
+{#                                </div>#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info">하한가&nbsp;&nbsp;<span class="number-down">{{ s2.high }}</span></div>#}
+{#                                </div>#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info">거래대금&nbsp;&nbsp;<span class="number">{{ s2.valuep }}</span>백만</div>#}
+{#                                </div>#}
+{##}
+{##}
+{##}
+{#                            </div>#}
+{##}
+{#                        </div>#}
                         <!-- Start .row -->
-                        <div class="row">
 
 
 
 
-    {% block content %}
 
+                        {% endblock %}
+{#                        <div class="row">#}
+{##}
+{##}
+{##}
+{##}
+{#                        </div>#}
 
-    {% endblock %}
-
-
-
-                        </div>
                         <!-- End .row -->
                     </div>
                     <!-- End .page-content-inner -->
