@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, render_to_response
 from .models import Post, Comment, Timeline
 from .forms import CommentForm, PostForm, TimelineForm
 from django.contrib.auth.decorators import login_required
@@ -7,6 +7,26 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from sdata.models import Stock2, Stock_current
+import json
+
+
+def search_titles(request):
+    if request.method == "POST":
+        search_text = request.POST.get('search_text')
+    else:
+        search_text = ''
+
+    articles = Stock_current.objects.filter(hname__contains = search_text)
+
+    return render_to_response('blog/test2.html',{'articles':articles})
+
+def EnemyAbility(request, tag=None):
+
+    entries = Stock_current.objects.get(shcode=str(tag));
+
+    data = entries.dic()
+
+    return HttpResponse(json.dumps(data), content_type="application/json" )
 
 
 # def timeline(request):
@@ -33,19 +53,17 @@ from sdata.models import Stock2, Stock_current
 # 전체에서 글 작성기능은 기능은 안됨 , 임시구현
 class StockListView(DetailView):
     model = Stock_current
-    template_name = 'blog/stock_detail.html'
+    template_name = 'blog/timeline.html'
     context_object_name = 's2'
 
     def get(self, request):
         timeline_list = Timeline.objects.all().order_by('-created_at')
 
         context = {
-            # 's2': s2,
-            # 'search_value': search_value,
             'timeline_list': timeline_list
         }
 
-        return render(request, "blog/stock_detail.html", context)
+        return render(request, "blog/timeline.html", context)
 
 
 # 종목 검색했을때 해당 페이지

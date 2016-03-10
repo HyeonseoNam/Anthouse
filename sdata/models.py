@@ -53,3 +53,10 @@ class Stock_current(models.Model):
 
     def __str__(self):
         return self.hname
+
+    def dic(self):
+        fields = ['hname', 'price', 'sign', 'change', 'diff', 'volume', 'recprice' ]
+        result = {}
+        for field in fields :
+            result[field] = self.__dict__[field]
+        return result

@@ -1,0 +1,127 @@
+  {% extends "admin-html/blank.html" %}
+
+  {%  load staticfiles %}
+
+
+{% block content %}
+
+                        <div id="page-header" class="clearfix">
+                            <div class="page-header">
+                                <h2>종목토론</h2>
+                                <span class="txt">종목에 대한 생각을 자유롭게 공유하세요</span>
+                            </div>
+                            <div class="header-stats">
+                                <div class="spark clearfix">
+                                    <div class="spark-info"><span class="number">2345</span>Visitors</div>
+                                    <div id="spark-visitors" class="sparkline"></div>
+                                </div>
+                                <div class="spark clearfix">
+                                    <div class="spark-info"><span class="number">17345</span>Views</div>
+                                    <div id="spark-templateviews" class="sparkline"></div>
+                                </div>
+                                <div class="spark clearfix">
+                                    <div class="spark-info"><span class="number">3700$</span>Sales</div>
+                                    <div id="spark-sales" class="sparkline"></div>
+                                </div>
+                            </div>
+                        </div>
+
+    <div class="row">
+
+        <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <!-- col-lg-12 start here -->
+                                <div class="panel panel-default toggle panelMove panelClose panelRefresh">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">상태 업데이트</h4>
+                                    </div>
+                                    <div class="panel-body pt0 pb0">
+                                        <form class="form-horizontal group-border stripped"  method="POST" action="{% url "blog:search_name" %}" enctype="multipart/form-data">
+                                                {% csrf_token %}
+
+{#                                            <div class="form-group">#}
+{#                                                <div class="col-md-12 ">#}
+{#                                                    <input type="text" class="form-control" name="title"  onfocus= "this.value=''" value="제목"/>#}
+{#                                                </div>#}
+{#                                            </div>#}
+                                            <div class="form-group">
+                                                <div class="col-md-12 ">
+                                                    {{ search_value }}
+                                                    <input type="hidden" name="search_value" value="{{ search_value }}" />
+{#                                                    <input type="text" class="form-control" name="content" style="height:100px;" onfocus= "this.value=''" value="이 종목에 대해 어떻게 생각하고 계신가요?"/>#}
+                                                    <textarea class="form-control" name="content" style="height:120px;" onfocus= "this.value=''">
+
+
+이 종목에 대해 어떻게 생각하고 계신가요?</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-gruoup">
+                                                <div class="col-md-8">
+{#                                                    <input type="file" class="filestyle" name="photo"/>#}
+                                                    <span class="buttonWrap"><input type="file" name="photo"></span>
+                                                </div>
+                                                <div class="col-md-4">
+{#                                                    <input type="submit" class="btn btn-primary  mr5 mb10 pull-right"  style="vertical-align:middle;" value="게시" />#}
+                                                    <button class="btn btn-primary pull-right" style="height:26px; width:52px; margin-top:2%; ; background:#455264; border-color: transparent; " type="submit">게시</button>
+{#                                                    <button type="button" class="btn btn-primary btn-alt mr5 mb10">Primary</button>#}
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+        <div class="col-md-3"></div>
+
+    </div>
+
+
+                                        {% for timeline in timeline_list %}
+
+<div class="row">
+
+<div class="col-md-3"></div>
+
+                            <div class="col-md-6 center-block ">
+                                <!-- Start col-lg- 3 -->
+                                <div class="panel panel-default panelMove toggle panelRefresh panelClose">
+                                    <!-- Start .panel -->
+                                    <div class="panel-heading" style="background-color: white;">
+                                        <h4 class="panel-title">{{ timeline.author.username }}</h4>
+{#                                        <h4 class="panel-title">{{ timeline.author.userprofile.name }}</h4>#}
+                                    </div>
+                                    <div class="panel-body">
+{#                                        <div class="scroll" data-height="170">#}
+                                        <div  data-height="170">
+                                             {{ timeline.content|linebreaks }}
+                                         {% if timeline.photo %}
+{#                                           <img src="{{ post.photo.url }}"/>#}
+                                           <img style="max-width:80%; margin-left: 10%"  src="{{ timeline.photo.url }}" />
+                                         {% endif %}
+                                        </div>
+                                        <br>
+                                        <div class="panel-footer" style="background-color: white; padding-bottom: 0px;" >
+                                            <button type="button" style="background-color: white;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;좋아요</button>
+                                            <button type="button" style="background-color: white; margin-left:20px;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>&nbsp;&nbsp;댓글달기</button>
+                                        </div>
+                                    </div>
+{#                                    <div class = "col-md-6 panel-body">#}
+{#                                            <ul class="list-inline">#}
+{#                                                <li>좋아요</li>#}
+{#                                                <li>댓글달기</li>#}
+{#                                            </ul>#}
+{#                                        </div>#}
+
+                                </div>
+                                <!-- End .panel -->
+                            </div>
+
+<div class="col-md-3"></div>
+
+</div>
+                                        {% endfor %}
+
+{%  endblock content %}
+
+
+
