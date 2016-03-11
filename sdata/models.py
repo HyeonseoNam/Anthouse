@@ -15,10 +15,10 @@ class Stock2(models.Model):
 
 class Stock_current(models.Model):
     hname = models.CharField(max_length=20)
-    price = models.CharField(max_length=8)
-    sign = models.CharField(max_length=1)
-    change = models.CharField(max_length=8)
-    diff = models.CharField(max_length=7)
+    price = models.IntegerField(max_length=8)
+    sign = models.IntegerField(max_length=1)
+    change = models.IntegerField(max_length=8)
+    diff = models.FloatField(max_length=8)
     volume = models.CharField(max_length=12)
     recprice = models.CharField(max_length=8)
     avgp = models.CharField(max_length=8)

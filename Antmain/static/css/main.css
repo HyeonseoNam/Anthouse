@@ -1773,7 +1773,7 @@ body.fixed-right-sidebar:not(.fixed-header) #right-sidebar.rstop {
 .page-content #page-header {
   background-color: #fcfcfc;
   margin-top: 1px;
-  padding: 0 20px;
+  padding: 0px 30px 0px 30px;
   margin-right: -20px;
   margin-left: -20px;
   margin-bottom: 20px;
@@ -1783,7 +1783,7 @@ body.fixed-right-sidebar:not(.fixed-header) #right-sidebar.rstop {
 
 .page-content #page-header .page-header {
   margin-top: 0px;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   border-bottom: none;
   float: left;
   margin-right: 20px;
@@ -1793,16 +1793,17 @@ body.fixed-right-sidebar:not(.fixed-header) #right-sidebar.rstop {
 
 
 .page-content #page-header .page-header h2 {
-  margin-bottom: 5px;
+  /*margin-bottom: 5px;*/
 }
 .page-content #page-header .header-stats {
   float: right;
-  padding: 15px;
+  padding-top: 20px;
 }
 
 .page-content #page-header .header-stats2 {
   float: left;
-  padding: 15px;
+
+  /*padding: 15px;*/
 }
 
 .page-content #page-header .header-stats2 .stock-name {

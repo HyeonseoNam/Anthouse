@@ -3,10 +3,10 @@
     float:left;
     overflow:hidden;
     cursor:pointer;
-    background-image:url('../img/etc/camera.gif');
-    width:30px;
-    height:30px;
-    margin-top:0.8%;
+    background-image:url('../img/etc/camera3.gif');
+    width:25px;
+    height:25px;
+    margin-top:1%;
 }
 .buttonWrap input {
     position:absolute;
@@ -17,4 +17,107 @@
     cursor:pointer;
     width:74px;
     height:20px;
+}
+
+#suprice{
+    font-weight:bold;
+    font-size : 33px;
+    color:#FE0008;
+    width:80px;
+    padding-right:15px;
+    border-right:1px solid #EEEEEE;
+    text-align:justify
+}
+
+#suchange{
+    font-weight:bold;
+    font-size : 20px;
+    padding-top:10px;
+    padding-right:15px;
+    padding-left:15px;
+    color:#FE0008;
+    width:75px;
+    border-right:1px solid #EEEEEE;
+    text-align:justify
+}
+
+#sudiff{
+    font-weight:bold;
+    font-size : 20px;
+    padding-top:10px;
+    padding-right:15px;
+    padding-left:15px;
+    color:#FE0008;
+    width:80px;
+    border-right:1px solid #EEEEEE;
+    text-align:justify
+}
+
+
+#sdprice{
+    font-weight:bold;
+    font-size : 33px;
+    color:#0059D1;
+    padding-right:15px;
+    width:80px;
+    border-right:1px solid #EEEEEE;
+    text-align:justify
+}
+
+#sdchange{
+    font-weight:bold;
+    font-size : 20px;
+    padding-top:10px;
+    padding-right:15px;
+    padding-left:15px;
+    color:#0059D1;
+    width:70px;
+    border-right:1px solid #EEEEEE;
+    text-align:justify
+}
+
+#sddiff{
+    font-weight:bold;
+    font-size : 20px;
+    padding-top:10px;
+    padding-right:15px;
+    padding-left:15px;
+    color:#0059D1;
+    width:80px;
+    border-right:1px solid #EEEEEE;
+    text-align:justify
+}
+
+#szprice{
+    font-weight:bold;
+    font-size : 33px;
+    color:#000000;
+    width:80px;
+    padding-right:15px;
+    border-right:1px solid #EEEEEE;
+    text-align:justify
+}
+
+#szchange{
+    font-weight:bold;
+    font-size : 20px;
+    padding-top:10px;
+    padding-right:15px;
+    padding-left:15px;
+    color:#000000;
+    width:70px;
+    border-right:1px solid #EEEEEE;
+    text-align:justify
+}
+
+#szdiff{
+    font-weight:bold;
+    font-size : 20px;
+    padding-top:10px;
+    padding-right:15px;
+    padding-left:15px;
+    color:#000000;
+    width:80px;
+    border-right:1px solid #EEEEEE;
+    text-align:justify
 }

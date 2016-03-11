@@ -6,16 +6,35 @@
 {% block content %}
 
                         <div id="page-header" class="clearfix">
-                            <div class="page-header ">
+                            <div class="page-header">
                                 <h2>{{ s_name }}</h2><span>{{ s_code }}</span>
                             </div>
 
                             <div class="header-stats2">
-                                <div class="spark clearfix">
+                                <div class="spark clearfix" style="padding-top: 15px">
                                     <span class="stock-name">{{ s2.hname }}</span><span class="stock-code">{{ s2.shcode }}</span>&nbsp;&nbsp;&nbsp;<span class="stock-codename">코스피</span>
-                                </div><hr>
-                                <div class="spark clearfix">
-                                    <span>전일대비</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="stock-change">{{ s2.change }}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="stock-diff">{{ s2.diff }} %</span>
+                                </div>
+                                <hr style="margin-top:5px; margin-bottom: 5px">
+                                <div class="spark clearfix" >
+                                    <table>
+                                      <tr style="vertical-align:top">
+                                         {% if s2.diff > 0  %}
+                                        <span id = "suprice" >{{ s2.price }}</span>
+                                        <span id = "suchange" ><span class="glyphicon glyphicon-triangle-top"></span> {{ s2.change }}</span>
+                                        <span id = "sudiff" >{{ s2.diff }} %</span>
+                                          {% elif s2.diff < 0 %}
+                                        <span id = "sdprice" >{{ s2.price }}</span>
+                                        <span id = "sdchange"><span class="glyphicon glyphicon-triangle-bottom"></span> {{ s2.change }}</span>
+                                        <span id = "sddiff">{{ s2.diff }} %</span>
+                                             {% else %}
+                                        <span id = "szprice" >{{ s2.price }}</span>
+                                        <span id = "szchange"><span class="glyphicon glyphicon-minus"></span> {{ s2.change }}</span>
+                                        <span id = "szdiff">{{ s2.diff }} %</span>
+                                          {% endif %}
+                                      </tr>
+                                    </table>
+
+{#                                    <span>전일대비</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="stock-change">{{ s2.change }}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="stock-diff">{{ s2.diff }} %</span>#}
                                 </div>
                             </div>
 
@@ -23,7 +42,7 @@
 
 
 
-                            <div class="header-stats">
+                            <div class="header-stats" style="margin-right:30px;">
                                 <div class="spark clearfix">
                                     <div class="spark-info">전일&nbsp;&nbsp;<span class="number">{{ s2.recprice }}</span></div>
 {#                                    <div id="spark-visitors" class="sparkline"></div>#}
@@ -36,7 +55,7 @@
                                 </div>
                                 <div class="spark clearfix">
                                     <div class="spark-info">거래량&nbsp;&nbsp;<span class="number">{{ s2.volume }}</span></div>
-                                </div><hr>
+                                </div><hr style="margin-top:17px; margin-bottom: 17px">
                                 <div class="spark clearfix">
                                     <div class="spark-info">시가&nbsp;&nbsp;<span class="number">{{ s2.openp }}</span></div>
                                 </div>
@@ -93,7 +112,8 @@
                                                 </div>
                                                 <div class="col-md-4">
 {#                                                    <input type="submit" class="btn btn-primary  mr5 mb10 pull-right"  style="vertical-align:middle;" value="게시" />#}
-                                                    <button class="btn btn-primary pull-right" style="height:26px; width:52px; margin-top:2%; ; background:#455264; border-color: transparent; " type="submit">게시</button>
+                                                    <button class="btn btn-primary pull-right" style="height:26px; width:52px; margin:4px 0px 4px 0px; background:#455264; border-color: transparent; " type="submit">게시</button>
+
 {#                                                    <button type="button" class="btn btn-primary btn-alt mr5 mb10">Primary</button>#}
                                                 </div>
                                             </div>
@@ -131,7 +151,7 @@
                                 <!-- Start col-lg- 3 -->
                                 <div class="panel panel-default panelMove toggle panelRefresh panelClose">
                                     <!-- Start .panel -->
-                                    <div class="panel-heading">
+                                    <div class="panel-heading" style="background-color: white;">
                                         <h4 class="panel-title">{{ timeline.author.username }}</h4>
 {#                                        <h4 class="panel-title">{{ timeline.author.userprofile.name }}</h4>#}
 
@@ -145,6 +165,14 @@
                                            <img style="max-width:80%; margin-left: 10%"  src="{{ timeline.photo.url }}" />
                                          {% endif %}
                                         </div>
+                                        <br>
+                                        <div class="panel-footer" style="background-color: white; padding-bottom: 0px;" >
+                                            <button type="button" style="background-color: white;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;&nbsp;좋아요</button>
+                                            <button type="button" style="background-color: white; margin-left:20px;" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span>&nbsp;&nbsp;댓글달기</button>
+                                        </div>
+
+
+
                                     </div>
                                 </div>
                                 <!-- End .panel -->
