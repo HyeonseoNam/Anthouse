@@ -19,15 +19,15 @@
                                     <table>
                                       <tr style="vertical-align:top">
                                          {% if s2.diff > 0  %}
-                                        <span id = "suprice" >{{ s2.price }}</span>
+                                        <span id = "suprice" >{{ price }}</span>
                                         <span id = "suchange" ><span class="glyphicon glyphicon-triangle-top"></span> {{ s2.change }}</span>
                                         <span id = "sudiff" >{{ s2.diff }} %</span>
                                           {% elif s2.diff < 0 %}
-                                        <span id = "sdprice" >{{ s2.price }}</span>
+                                        <span id = "sdprice" >{{ price }}</span>
                                         <span id = "sdchange"><span class="glyphicon glyphicon-triangle-bottom"></span> {{ s2.change }}</span>
                                         <span id = "sddiff">{{ s2.diff }} %</span>
                                              {% else %}
-                                        <span id = "szprice" >{{ s2.price }}</span>
+                                        <span id = "szprice" >{{ price }}</span>
                                         <span id = "szchange"><span class="glyphicon glyphicon-minus"></span> {{ s2.change }}</span>
                                         <span id = "szdiff">{{ s2.diff }} %</span>
                                           {% endif %}
@@ -44,29 +44,28 @@
 
                             <div class="header-stats" style="margin-right:30px;">
                                 <div class="spark clearfix">
-                                    <div class="spark-info">전일&nbsp;&nbsp;<span class="number">{{ s2.recprice }}</span></div>
-{#                                    <div id="spark-visitors" class="sparkline"></div>#}
+                                    <div class="spark-info">전일&nbsp;&nbsp;<span class="number">{{ recprice }}</span></div>
                                 </div>
                                 <div class="spark clearfix">
-                                    <div class="spark-info">고가&nbsp;&nbsp;<span class="number-up">{{ s2.high }}</span></div>
+                                    <div class="spark-info">고가&nbsp;&nbsp;<span class="number-up">{{ high }}</span></div>
                                 </div>
                                 <div class="spark clearfix">
-                                    <div class="spark-info">상한가&nbsp;&nbsp;<span class="number-up">{{ s2.uplmtprice }}</span></div>
+                                    <div class="spark-info">상한가&nbsp;&nbsp;<span class="number-up">{{ uplmtprice }}</span></div>
                                 </div>
                                 <div class="spark clearfix">
-                                    <div class="spark-info">거래량&nbsp;&nbsp;<span class="number">{{ s2.volume }}</span></div>
+                                    <div class="spark-info">거래량&nbsp;&nbsp;<span class="number">{{ volume }}</span></div>
                                 </div><hr style="margin-top:17px; margin-bottom: 17px">
                                 <div class="spark clearfix">
-                                    <div class="spark-info">시가&nbsp;&nbsp;<span class="number">{{ s2.openp }}</span></div>
+                                    <div class="spark-info">시가&nbsp;&nbsp;<span class="number">{{ openp }}</span></div>
                                 </div>
                                 <div class="spark clearfix">
-                                    <div class="spark-info">저가&nbsp;&nbsp;<span class="number-down">{{ s2.dnlmtprice }}</span></div>
+                                    <div class="spark-info">저가&nbsp;&nbsp;<span class="number-down">{{ low }}</span></div>
                                 </div>
                                 <div class="spark clearfix">
-                                    <div class="spark-info">하한가&nbsp;&nbsp;<span class="number-down">{{ s2.high }}</span></div>
+                                    <div class="spark-info">하한가&nbsp;&nbsp;<span class="number-down">{{ dnlmtprice }}</span></div>
                                 </div>
                                 <div class="spark clearfix">
-                                    <div class="spark-info">거래대금&nbsp;&nbsp;<span class="number">{{ s2.valuep }}</span>백만</div>
+                                    <div class="spark-info">거래대금&nbsp;&nbsp;<span class="number">{{ valuep }}</span>백만</div>
                                 </div>
 
 

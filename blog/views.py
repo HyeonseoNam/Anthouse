@@ -8,7 +8,9 @@ from django.core.urlresolvers import reverse, reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from sdata.models import Stock2, Stock_current
 import json
+import locale
 
+locale.setlocale(locale.LC_ALL, '')
 
 def search_titles(request):
     if request.method == "POST":
@@ -73,28 +75,51 @@ class StockDetailView(DetailView):
     context_object_name = 's2'
 
 
-    def get(self, request):
+
+    def get(self, request, *args, **kwargs):
         # s2 = Stock_current.objects.get(hname=request.GET.get('title'))
         search = request.GET.get('search')
+
+
+        def locale_value(*args):
+            locale_value = []
+
+            for i in args:
+                locale_value.append(locale.format('%.3d',i,1))
+
+            return locale_value
 
         try:
             int(search)
             search_value = search
             s2 = Stock_current.objects.get(shcode=search_value)
+            price,recprice,uplmtprice,volume,openp,dnlmtprice,high,low,valuep = locale_value(s2.price, s2.recprice,s2.uplmtprice,s2.volume,s2.openp,s2.dnlmtprice,s2.high,s2.low,s2.valuep)
+
         except:
             # 숫자가 아닐때 shcode 가 정의가 되지 않아서 에러가 남.
             str(search)
             search_value = search
             s2 = Stock_current.objects.get(hname=search_value)
+            price,recprice,uplmtprice,volume,openp,dnlmtprice,high,low,valuep = locale_value(s2.price, s2.recprice,s2.uplmtprice,s2.volume,s2.openp,s2.dnlmtprice,s2.high,s2.low,s2.valuep)
+
+
 
         timeline_list = Timeline.objects.filter(stock=s2).order_by('-created_at')
 
         context = {
             's2': s2,
+            'price': price,
+            'recprice': recprice,
+            'uplmtprice': uplmtprice,
+            'volume': volume,
+            'openp': openp,
+            'dnlmtprice': dnlmtprice,
+            'high': high,
+            'low': low,
+            'valuep': valuep,
             'search_value': search_value,
             'timeline_list': timeline_list
         }
-
         return render(request, "blog/stock_detail.html", context)
 
     def post(self,request):

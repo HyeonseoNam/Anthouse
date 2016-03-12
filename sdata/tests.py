@@ -1,3 +1,12 @@
-from django.test import TestCase
+def a2(*args):
 
-# Create your tests here.
+    a= []
+
+    for i in args:
+        a.append(i)
+        print(a)
+    return a
+
+
+q,w,e = a2('a','b','c')
+print(q,w,e)
