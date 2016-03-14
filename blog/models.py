@@ -17,7 +17,6 @@ class Post(models.Model):
 class Timeline(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL)
     stock = models.ForeignKey(Stock_current, blank=True, null=True)
-    # stock = models.ForeignKey(Stock_current)
     content = models.TextField()
     photo = models.ImageField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)

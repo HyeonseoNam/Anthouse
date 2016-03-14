@@ -11,6 +11,8 @@ class Userprofile(models.Model):
     name = models.CharField(max_length= 20, blank= True)
     nickname = models.CharField(max_length = 128, blank=True)
     email = models.CharField(max_length= 128, blank=True)
+    photo = models.ImageField(blank=True, null=True)
+
 
     def __str__(self):
         return "%s"%(self.user,)
