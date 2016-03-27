@@ -22,13 +22,13 @@ def search_titles(request):
 
     return render_to_response('blog/test2.html',{'articles':articles})
 
-def EnemyAbility(request, tag=None):
-
-    entries = Stock_current.objects.get(shcode=str(tag));
-
-    data = entries.dic()
-
-    return HttpResponse(json.dumps(data), content_type="application/json" )
+# def EnemyAbility(request, tag=None):
+#
+#     entries = Stock_current.objects.get(shcode=str(tag));
+#
+#     data = entries.dic()
+#
+#     return HttpResponse(json.dumps(data), content_type="application/json" )
 
 
 # def timeline(request):

@@ -14,7 +14,7 @@ urlpatterns = patterns('blog.views',
     url(r'^search/$', StockDetailView.as_view(), name='search_name'),
     url(r'^search2/$', 'search_titles', name='search_titles'),
     # url(r'^search/(?P<pk>\d+)/$', StockDetailView2.as_view(), name='search_name2'),
-    url(r'^enemy/(?P<tag>\d+)', 'EnemyAbility'),
+    # url(r'^enemy/(?P<tag>\d+)', 'EnemyAbility'),
 
 
 

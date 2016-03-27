@@ -32,6 +32,17 @@ def signup(request):
     })
 
 
+class UserUpdateView(UpdateView):
+    model = Userprofile
+    form_class = UserProfileForm
+    template_name = 'accounts/profile.html'
+
+
+    def get_success_url(self):
+        return reverse('/')
+
+
+
 class UserProfileView(DetailView):
     model = Userprofile
     template_name = 'accounts/profile.html'
@@ -43,7 +54,6 @@ class UserProfileView(DetailView):
         # s2 = Stock_current.objects.get(hname=request.GET.get('title'))
         search = request.GET.get('search')
 
-
         userlist = Userprofile.objects.get(nickname = "카이타샤")
 
         context = {
@@ -51,22 +61,25 @@ class UserProfileView(DetailView):
         }
         return render(request, "accounts/profile.html", context)
 
-    # def post(self,request):
-    #     form = UserProfileForm(request.POST, request.FILES)
-    #     # name = request.POST.get('name')
-    #     # nickname = request.POST.get('nickname')
-    #     # email = request.POST.get('photo')
-    #     # photo = request.POST.get('photo')
-    #     #
-    #     if form.is_valid():
-    #         userlist = form.save(commit=False)
-    #         userlist.user = request.user
-    #         userlist.save()
-    #
-    #     # timeline_list = Timeline.objects.filter(stock=s2).order_by('-created_at')
-    #
-    #
-    #     return render(request, 'accounts/profile.html', {
-    #         'userlist': userlist,
-    #         'form':form,
-    #     })
+    def post(self,request, userlist_pk):
+        userlist = Userprofile.objects.get(pk=userlist_pk)
+
+        form = UserProfileForm(request.POST, request.FILES)
+        name = request.POST.get('name')
+        # nickname = request.POST.get('nickname')
+        # email = request.POST.get('photo')
+        # photo = request.POST.get('photo')
+        #
+        if form.is_valid():
+            userlist = form.save(commit=False)
+            # userlist.user = request.user
+            # userlist.name = name
+            userlist.save()
+
+        # timeline_list = Timeline.objects.filter(stock=s2).order_by('-created_at')
+
+
+        return render(request, 'accounts/profile.html', {
+            'userlist': userlist,
+            'form':form,
+        })

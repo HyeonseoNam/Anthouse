@@ -1,9 +1,31 @@
-  {% extends "mylist/mylist_blank.html" %}
+{#  {% extends "mylist/mylist_blank.html" %}#}
+  {% extends "admin-html/blank.html" %}
 {%  load staticfiles %}
 
 
 
 {% block content %}
+
+                            <div id="page-header" class="clearfix">
+                            <div class="page-header">
+                                <h2>종목관리</h2>
+                                <span class="txt">관심있는 종목을 등록 후 관리하세요</span>
+                            </div>
+{#                            <div class="header-stats">#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info"><span class="number">2345</span>Visitors</div>#}
+{#                                    <div id="spark-visitors" class="sparkline"></div>#}
+{#                                </div>#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info"><span class="number">17345</span>Views</div>#}
+{#                                    <div id="spark-templateviews" class="sparkline"></div>#}
+{#                                </div>#}
+{#                                <div class="spark clearfix">#}
+{#                                    <div class="spark-info"><span class="number">3700$</span>Sales</div>#}
+{#                                    <div id="spark-sales" class="sparkline"></div>#}
+{#                                </div>#}
+{#                            </div>#}
+                        </div>
 
                         <!-- Start .row -->
                         <div class="row">
@@ -25,43 +47,62 @@
                                                     <th>거래량</th>
                                                 </tr>
                                             </thead>
+
                                             <tbody>
+                                            {% for stock in stock_list %}
+
                                                 <tr>
-                                                    <td>Car</td>
-                                                    <td>100</td>
-                                                    <td>200</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
+                                                    <td>{{ stock.hname }}</td>
+                                                    <td>{{ stock.price }}</td>
+                                                    <td>{{ stock.change }}</td>
+                                                    <td>{{ stock.diff }}</td>
+                                                    <td>{{ stock.volume }}</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>Bike</td>
-                                                    <td>330</td>
-                                                    <td>240</td>
-                                                    <td>1</td>
-                                                    <td>1</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Plane</td>
-                                                    <td>430</td>
-                                                    <td>540</td>
-                                                    <td>3</td>
-                                                    <td>3</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Yacht</td>
-                                                    <td>100</td>
-                                                    <td>200</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Segway</td>
-                                                    <td>330</td>
-                                                    <td>240</td>
-                                                    <td>1</td>
-                                                    <td>1</td>
-                                                </tr>
+
+                                            {% endfor %}
+
                                             </tbody>
+{#                                            <tbody>#}
+{#                                                <tr>#}
+{#                                                    <td>Car</td>#}
+{#                                                    <td>100</td>#}
+{#                                                    <td>200</td>#}
+{#                                                    <td>0</td>#}
+{#                                                    <td>0</td>#}
+{#                                                </tr>#}
+{#                                                <tr>#}
+{#                                                    <td>Bike</td>#}
+{#                                                    <td>330</td>#}
+{#                                                    <td>240</td>#}
+{#                                                    <td>1</td>#}
+{#                                                    <td>1</td>#}
+{#                                                </tr>#}
+{#                                                <tr>#}
+{#                                                    <td>Plane</td>#}
+{#                                                    <td>430</td>#}
+{#                                                    <td>540</td>#}
+{#                                                    <td>3</td>#}
+{#                                                    <td>3</td>#}
+{#                                                </tr>#}
+{#                                                <tr>#}
+{#                                                    <td>Yacht</td>#}
+{#                                                    <td>100</td>#}
+{#                                                    <td>200</td>#}
+{#                                                    <td>0</td>#}
+{#                                                    <td>0</td>#}
+{#                                                </tr>#}
+{#                                                <tr>#}
+{#                                                    <td>Segway</td>#}
+{#                                                    <td>330</td>#}
+{#                                                    <td>240</td>#}
+{#                                                    <td>1</td>#}
+{#                                                    <td>1</td>#}
+{#                                                </tr>#}
+{#                                            </tbody>#}
+
+
+
+
                                             <tfoot>
                                                 <tr>
                                                     <th><strong>TOTAL</strong>

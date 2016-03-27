@@ -194,10 +194,10 @@
                         <!-- / .sidebar-panel -->
                         <div class="user-info clearfix">
                             {% if user.is_authenticated %}
-                            <img src="{% static 'img/avatars/128.jpg' %}" alt="avatar">
+                            <img src="{% static 'img/avatars/dh_profile.jpg' %}" alt="avatar">
                             <span class="name">{{ user.username }}</span>
                             {% else %}
-                            <img src="{% static 'img/avatars/128.jpg' %}" alt="avatar">
+                            <img src="{% static 'img/avatars/guest.png' %}" alt="avatar">
                             <span class="name"> Guest</span>
                             {%  endif %}
 

@@ -1,5 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.conf import settings
+from sdata.models import Stock_current
+
 # from django.contrib.auth.models import (
 #     BaseUserManager, AbstractBaseUser
 
@@ -7,11 +10,13 @@ from django.contrib.auth.models import User
 
 
 class Userprofile(models.Model):
-    user = models.OneToOneField(User)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL)
     name = models.CharField(max_length= 20, blank= True)
     nickname = models.CharField(max_length = 128, blank=True)
     email = models.CharField(max_length= 128, blank=True)
     photo = models.ImageField(blank=True, null=True)
+    stock = models.ManyToManyField(Stock_current, blank=True, null=True)
+
 
 
     def __str__(self):

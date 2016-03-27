@@ -181,8 +181,17 @@
                         </div>
                         <!-- / .sidebar-panel -->
                         <div class="user-info clearfix">
-                            <img src="{% static "img/avatars/128.jpg" %}" alt="avatar">
-                            <span class="name">SuggeElson</span>
+                            {% if user.is_authenticated %}
+                            <img src="{% static 'img/avatars/128.jpg' %}" alt="avatar">
+                            <span class="name">{{ user.username }}</span>
+                            {% else %}
+                            <img src="{% static 'img/avatars/128.jpg' %}" alt="avatar">
+                            <span class="name"> Guest</span>
+                            {%  endif %}
+
+
+
+
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default btn-xs"><i class="l-basic-gear"></i>
                                 </button>
