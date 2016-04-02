@@ -7,12 +7,12 @@
 
 
 
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row" style="margin-top:20px;">
+                            <div class="col-lg-6 col-md-6 col-sm-12"  >
                                 <!-- col-lg-4 start here -->
                                 <div class="panel panel-default plain">
                                     <!-- Start .panel -->
-                                    <div class="panel-heading">
+                                    <div class="panel-heading" >
                                         <h4 class="panel-title bb">프로필</h4>
                                     </div>
                                     <div class="panel-body">
@@ -182,7 +182,8 @@
                                             <a href="#" class="btn btn-default timeline-load-more-btn"><i class="fa fa-refresh"></i> Load more </a>
                                         </div>
                                         <div class="tab-pane fade pb0" id="edit-profile">
-                                            <form class="form-horizontal group-border stripped" method="POST" action="{% url "edit_profile" %}" role="form">
+{#                                            <form class="form-horizontal group-border stripped" method="POST" action="{% url "edit_profile" %}" role="form">#}
+                                            <form class="form-horizontal group-border stripped" method="POST"  role="form">
                                                 {% csrf_token %}
 {#                                                <div class="form-group">#}
 {#                                                    <label class="col-lg-3 control-label" for="">First Name</label>#}
@@ -244,7 +245,7 @@
                                                 <!-- End .form-group  -->
                                                 <div class="form-group">
                                                     <div class="col-lg-9 col-lg-offset-3">
-                                                        <button class="btn btn-primary" type="subimt">변경하기</button>
+                                                        <button class="btn btn-primary" id="submit3" type="subimt">변경하기</button>
                                                     </div>
                                                 </div>
                                                 <!-- End .form-group  -->

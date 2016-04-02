@@ -7,7 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
 from accounts.forms import SignupForm
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import UserProfileForm
 from .models import Userprofile, User
@@ -32,15 +32,16 @@ def signup(request):
     })
 
 
-class UserUpdateView(UpdateView):
-    model = Userprofile
-    form_class = UserProfileForm
-    template_name = 'accounts/profile.html'
-
-
-    def get_success_url(self):
-        return reverse('/')
-
+# class UserUpdateView(ListView):
+#
+#     def post(self, request):
+#         if 'new_sub' in request.POST and self.request.is_ajax():
+#             name= request.POST.get('name')
+#             nickname= request.POST.get('nickname')
+#             email= request.POST.get('email')
+#             data = {"name":name, "nickname" : nickname, "email":email }
+#             return JsonResponse(data)
+#         return render(request,'accounts/profile.html')
 
 
 class UserProfileView(DetailView):
@@ -61,25 +62,33 @@ class UserProfileView(DetailView):
         }
         return render(request, "accounts/profile.html", context)
 
-    def post(self,request, userlist_pk):
-        userlist = Userprofile.objects.get(pk=userlist_pk)
-
-        form = UserProfileForm(request.POST, request.FILES)
-        name = request.POST.get('name')
-        # nickname = request.POST.get('nickname')
-        # email = request.POST.get('photo')
-        # photo = request.POST.get('photo')
-        #
-        if form.is_valid():
-            userlist = form.save(commit=False)
-            # userlist.user = request.user
-            # userlist.name = name
-            userlist.save()
-
-        # timeline_list = Timeline.objects.filter(stock=s2).order_by('-created_at')
-
-
-        return render(request, 'accounts/profile.html', {
-            'userlist': userlist,
-            'form':form,
-        })
+    # def post(self,request, userlist_pk):
+    #     userlist = Userprofile.objects.get(pk=userlist_pk)
+    #
+    #     form = UserProfileForm(request.POST, request.FILES)
+    #     name = request.POST.get('name')
+    #     # nickname = request.POST.get('nickname')
+    #     # email = request.POST.get('photo')
+    #     # photo = request.POST.get('photo')
+    #     #
+    #     if form.is_valid():
+    #         userlist = form.save(commit=False)
+    #         # userlist.user = request.user
+    #         # userlist.name = name
+    #         userlist.save()
+    #
+    #     # timeline_list = Timeline.objects.filter(stock=s2).order_by('-created_at')
+    #
+    #
+    #     return render(request, 'accounts/profile.html', {
+    #         'userlist': userlist,
+    #         'form':form,
+    #     })
+    def post(self, request):
+        if 'new_sub' in request.POST and self.request.is_ajax():
+            name= request.POST.get('name')
+            nickname= request.POST.get('nickname')
+            email= request.POST.get('email')
+            data = {"name":name, "nickname" : nickname, "email":email }
+            return JsonResponse(data)
+        return render(request,'accounts/profile.html')
