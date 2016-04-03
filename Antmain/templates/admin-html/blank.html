@@ -73,20 +73,13 @@
                             <span class="sr-only">Collapse sidebar</span>
                         </a>
                     </li>
-                    <li>
-{#                        {% for stock in stock_list %}#}
-{#                        <a href="#" class="reset-layout tipB" title="Reset panel position for this page"><i class="fa fa-history"></i></a>#}
-{#                        <form class="navbar-form pull-left" method="post"  action="{% url "blog:search_name" stock.pk %}" role="form">#}
-                        <form class="navbar-form pull-left" method="get"   action="{% url "blog:search_name" %}"  role="form">
-
-                            {% csrf_token %}
-                            <input type="text" class="form-control" name="search" id="title" value="" placeholder="종목 검색">
-                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                        </form>
-{#                        {% endfor %}#}
-                    </li>
                 </ul>
-
+                        <form class="navbar-form pull-left" method="get"   action="{% url "blog:search_name" %}"  role="form">
+                        {% csrf_token %}
+                            <input type="text" class="form-control" name="search" id="stock_title" value="" placeholder="종목 검색" autocomplete="off" required>
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                            <div id="tipue_drop_content"></div>
+                        </form>
                 <!-- / top left nav -->
 
 
@@ -707,6 +700,9 @@
         <script>
         window.jQuery || document.write('<script src="../../js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
         </script>
+        <script src="../../static/js/autocomplete.js"></script>
+
+
         <!--[if lt IE 9]>
   <script type="text/javascript" src="../../js/libs/excanvas.min.js"></script>
   <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -755,6 +751,7 @@
 
 
 
+
         <!-- Other plugins ( load only nessesary plugins for every page) -->
         <script src="../../static/plugins/forms/bootstrap-filestyle/bootstrap-filestyle.js"></script>
         <script src="../../static//forms/autosize/jquery.autosize.js"></script>
@@ -764,6 +761,10 @@
         <script src="../../static/js/jquery.dynamic.js"></script>
         <script src="../../static/js/main.js"></script>
         <script src="../../static/js/pages/forms-basic.js"></script>
+
+        <link href="../../static/plugins/tipuedrop/tipuedrop.css" rel="stylesheet">
+        <script src="../../static/plugins/tipuedrop/tipuedrop.min.js"></script>
+        <script src="../../static/plugins/tipuedrop/tipuedrop_content.js"></script>
 
 
     </body>

@@ -19,37 +19,8 @@ def search_titles(request):
         search_text = ''
 
     articles = Stock_current.objects.filter(hname__contains = search_text)
-
     return render_to_response('blog/test2.html',{'articles':articles})
 
-# def EnemyAbility(request, tag=None):
-#
-#     entries = Stock_current.objects.get(shcode=str(tag));
-#
-#     data = entries.dic()
-#
-#     return HttpResponse(json.dumps(data), content_type="application/json" )
-
-
-# def timeline(request):
-#     timeline_list = Timeline.objects.all().order_by('-created_at')
-#     if request.method == 'POST':
-#         form = TimelineForm(request.POST, request.FILES)
-#         # shcode = request.POST.get('shcode')
-#         shcode = '099220'
-#         stock = Stock_current.objects.get(shcode=shcode)
-#         if form.is_valid():
-#             timeline = form.save(commit=False)
-#             timeline.author = request.user
-#             timeline.stock = stock
-#             timeline.save()
-#             # return redirect('blog:post_detail', post.pk)
-#     else:
-#         form = TimelineForm()
-#     return render(request, 'blog/stock_detail.html', {
-#         'timeline_list': timeline_list,
-#         'form':form,
-#     })
 
 
 # 전체에서 글 작성기능은 기능은 안됨 , 임시구현
@@ -99,7 +70,7 @@ class StockDetailView(DetailView):
             # 숫자가 아닐때 shcode 가 정의가 되지 않아서 에러가 남.
             str(search)
             search_value = search
-            s2 = Stock_current.objects.get(hname=search_value)
+            s2 = Stock_current.objects.get(hname__icontains=search_value)
             price,recprice,uplmtprice,volume,openp,dnlmtprice,high,low,valuep = locale_value(s2.price, s2.recprice,s2.uplmtprice,s2.volume,s2.openp,s2.dnlmtprice,s2.high,s2.low,s2.valuep)
 
 

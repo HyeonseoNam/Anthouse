@@ -21,6 +21,7 @@ class Timeline(models.Model):
     photo = models.ImageField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    like = models.PositiveIntegerField(blank=True, null=True, default=0)
 
     def __str__(self):
         return self.content
