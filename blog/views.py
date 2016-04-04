@@ -97,12 +97,26 @@ class StockDetailView(DetailView):
         form = TimelineForm(request.POST, request.FILES)
         search_value = request.POST.get('search_value')
 
+
+        def locale_value(*args):
+            locale_value = []
+
+            for i in args:
+                locale_value.append(locale.format('%.3d', i, 1))
+
+            return locale_value
+
+
         try:
             int(search_value)
             s2 = Stock_current.objects.get(shcode=search_value)
+            price,recprice,uplmtprice,volume,openp,dnlmtprice,high,low,valuep = locale_value(s2.price, s2.recprice,s2.uplmtprice,s2.volume,s2.openp,s2.dnlmtprice,s2.high,s2.low,s2.valuep)
+
         except:
             str(search_value)
             s2 = Stock_current.objects.get(hname=search_value)
+            price,recprice,uplmtprice,volume,openp,dnlmtprice,high,low,valuep = locale_value(s2.price, s2.recprice,s2.uplmtprice,s2.volume,s2.openp,s2.dnlmtprice,s2.high,s2.low,s2.valuep)
+
 
         if form.is_valid():
             timeline = form.save(commit=False)
@@ -115,6 +129,16 @@ class StockDetailView(DetailView):
 
         return render(request, 'blog/stock_detail.html', {
             's2': s2,
+            'price': price,
+            'recprice': recprice,
+            'uplmtprice': uplmtprice,
+            'volume': volume,
+            'openp': openp,
+            'dnlmtprice': dnlmtprice,
+            'high': high,
+            'low': low,
+            'valuep': valuep,
+            'search_value': search_value,
             'timeline_list': timeline_list,
             'form':form,
         })
