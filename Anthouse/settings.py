@@ -89,8 +89,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'Anthouse',
-        'USER': 'blue1028',
-        'PASSWORD': 'ehdghks57',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '', # default port
 
